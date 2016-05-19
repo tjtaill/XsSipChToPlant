@@ -21,19 +21,19 @@ public class XsSipChToPlant {
 
 
     private final static Pattern HEAD_LINE = Pattern.compile(XS_DATE
-            + " E[DS]T \\| Info\\s{7}\\| "
+            + " [A-Z]{1,4} \\| Info\\s{7}\\| "
             + TYPE + " \\| "
             + XS_DEVICE + " \\| "
             + XS_SESSION_ID );
 
     private final static Pattern DIRECTION_LINE =
-            Pattern.compile("\\s*udp \\d+ Bytes (IN from|OUT to) (\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}):\\d{1,5}");
+            Pattern.compile("\\s*udp \\d+ Bytes (IN from|OUT to) (.+):\\d{1,5}");
     private final static Pattern SIP_RESPONSE_LINE =
             Pattern.compile("SIP/2.0 (\\d{3}).*?");
     private static final String METHOD =
             "(INVITE|ACK|BYE|CANCEL|OPTIONS|REGISTER|PRACK|SUBSCRIBE|NOTIFY|PUBLISH|INFO|REFER|MESSAGE|UPDATE)";
     private final static Pattern SIP_REQUEST_LINE =
-            Pattern.compile(METHOD + " sip:.*?");
+            Pattern.compile(METHOD + " (:?sip|tel):.*?");
 
 
 
