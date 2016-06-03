@@ -38,7 +38,7 @@ public class XsSipChToPlant {
 
 
     public static String createMessage(String message, String origin, String destination, int lineNumber) {
-        return origin + " -> " + destination + " : " + "[[" + lineNumber + "]] " + message + "\n";
+        return origin + " -> " + destination + " : " + "[[" + lineNumber + "{" + origin + "," + destination + "}" + "]] " + message + "\n";
     }
 
 
