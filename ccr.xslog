@@ -1,0 +1,2457 @@
+	applicationId=0
+	hopByHopId=101546232
+	endToEndId=433061898
+AVPs:
+	Result-Code: code=268, flags=M, Unsigned32, value=2001 Description: Diameter Success
+	Origin-Host: code=264, flags=M, DiameterIdentity, value=xs.client.mtl.broadsoft.com
+	Origin-Realm: code=296, flags=M, DiameterIdentity, value=TestRealm
+	Origin-State-Id: code=278, flags=M, Unsigned32, value=1462990682 Description: Unknown
+
+
+2016.05.11 14:32:25:256 EDT | FieldDebug | Generic | routeManager
+
+	Start offline route check
+
+2016.05.11 14:32:25:257 EDT | FieldDebug | Generic | routeManager
+
+	End offline route check
+
+2016.05.11 14:32:33:542 EDT | Info       | Generic
+
+	SIP request received. 100 Trying sent before session created, SIP level logging differed to session.
+ecd9e08f-6b41222-1d6f505@192.168.22.64
+603@mtlasdev55.net:5060
+5146976608@mtlasdev55.net:5060
+
+2016.05.11 14:32:33:544 EDT | FieldDebug | Generic
+
+	Fetching user profile from Subscriber Agent using xpath: /sub:broadworks/subscriber/users/entry[prov/identities/devices/entry/addressOfRecord='5146976608@mtlasdev55.net']
+
+2016.05.11 14:32:33:544 EDT | Info       | SubscriberSubsystem
+
+	Executing read of /sub:broadworks/subscriber/users/entry[prov/identities/devices/entry/addressOfRecord='5146976608@mtlasdev55.net']
+
+2016.05.11 14:32:33:548 EDT | FieldDebug | SubscriberSubsystem
+
+	Cache hit on user[5146976608@mtlasdev55.net]
+
+2016.05.11 14:32:33:548 EDT | FieldDebug | SubscriberSubsystem
+
+	Fragment loaded, completing read into user[5146976608@mtlasdev55.net]
+
+2016.05.11 14:32:33:549 EDT | Info       | SubscriberSubsystem
+
+	Read completed on /sub:broadworks/subscriber/users/entry[prov/identities/devices/entry/addressOfRecord='5146976608@mtlasdev55.net']
+<entry xmlns:sub="http://schema.broadsoft.com/Subscribers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><uniqueKey>5146976608@mtlasdev55.net</uniqueKey><prov><info><userId>south08@mtlasdev55.net</userId><firstName>john8</firstName><lastName>south</lastName><firstNameUnicode>john8</firstNameUnicode><lastNameUnicode>south</lastNameUnicode><timeZone>US/Eastern</timeZone><languageKey>English</languageKey><userType>User</userType><emailAddress xsi:nil="true"></emailAddress><clid xsi:nil="true"></clid><ncosKey xsi:nil="true"></ncosKey><groupKey>763969050</groupKey><departmentKey xsi:nil="true"></departmentKey><title xsi:nil="true"></title><mobileODN xsi:nil="true"></mobileODN><pagerODN xsi:nil="true"></pagerODN></info><identities><dnProperties><entry><type>Main</type><dn>+15146976608</dn><extension>608</extension><ringPattern>Normal</ringPattern></entry></dnProperties><devices><entry><accessDeviceKey>623493492</accessDeviceKey><addressOfRecord>5146976608@mtlasdev55.net</addressOfRecord><type>Main</type><active>true</active><allowOrigination>true</allowOrigination><allowTermination>true</allowTermination><staticLocation xsi:nil="true"></staticLocation><privateIdentity xsi:nil="true"></privateIdentity><allowVideo>true</allowVideo></entry></devices><aliases></aliases></identities><policies><callProcessingPolicy><callLimitPolicy><useOwnPolicy>false</useOwnPolicy><ownPolicy xsi:nil="true"></ownPolicy></callLimitPolicy><mediaPolicy><useOwnPolicy>false</useOwnPolicy><ownPolicy xsi:nil="true"></ownPolicy></mediaPolicy><clidPolicy><useOwnPolicy>false</useOwnPolicy><ownPolicy xsi:nil="true"></ownPolicy></clidPolicy><redirectedCOLPPrivacy>NoPrivacy</redirectedCOLPPrivacy><send181ResponseOnRedirectedCalls>Never</send181ResponseOnRedirectedCalls></callProcessingPolicy><devicePolicy><callDecline>false</callDecline></devicePolicy></policies><sharedServiceData><noAnswerTimer>3</noAnswerTimer><usePersonalizedName>false</usePersonalizedName><voicePortalAutoLogin>false</voicePortalAutoLogin><personalizedNameMediaType xsi:nil="true"></personalizedNameMediaType><lastPasscodeModified>1462989480109</lastPasscodeModified><voicePortalFailNotificationSent>false</voicePortalFailNotificationSent><failedVoicePortalAttempts>0</failedVoicePortalAttempts><voicePortalPasswordNotSet>true</voicePortalPasswordNotSet><voicePortalPassword>0000</voicePortalPassword><capSharedKey xsi:nil="true"></capSharedKey><loginPassword>b0846ffd660576690f30ac56442acb7487d99063</loginPassword><ocicApps xsi:nil="true"></ocicApps><customMediaFilePath>customMediaFiles/7/6396/763969050/600506908</customMediaFilePath><schedules></schedules><communicationBarringAuthorizationCodes></communicationBarringAuthorizationCodes><sustainedAuthorizationCode xsi:nil="true"></sustainedAuthorizationCode></sharedServiceData><services><sub:broadworksAnywhere active="false"><alertAll>false</alertAll><locations></locations></sub:broadworksAnywhere><sub:callForwardingAlways active="false"><destination xsi:nil="true"></destination><ringSplashActive>false</ringSplashActive></sub:callForwardingAlways><sub:callForwardingBusy active="false" xsi:type="sub:CallForwardingType"><destination xsi:nil="true"></destination></sub:callForwardingBusy><sub:callForwardingNoAnswer active="false"><destination xsi:nil="true"></destination></sub:callForwardingNoAnswer><sub:originating-identity-presentation-restriction active="false"><default-behaviour>presentation-not-restricted</default-behaviour></sub:originating-identity-presentation-restriction><sub:callTransfer><recallActive>false</recallActive><recallNoAnswerRings>4</recallNoAnswerRings><blindTransferDiversionInhibited>false</blindTransferDiversionInhibited><consultativeCallDiversionInhibited>false</consultativeCallDiversionInhibited><busyCampOn>false</busyCampOn><campOnTime>120</campOnTime></sub:callTransfer><sub:communication-waiting active="true"></sub:communication-waiting><sub:commpilotCallManager active="true"></sub:commpilotCallManager><sub:customRingbackUser active="false"><rules></rules></sub:customRingbackUser><sub:doNotDisturb active="false"><ringSplashActive>false</ringSplashActive></sub:doNotDisturb><sub:originating-identity-presentation active="true"></sub:originating-identity-presentation><sub:prepaid active="true"></sub:prepaid><sub:sharedCallAppearance active="false"><alertAll>false</alertAll><allowRetrieve>false</allowRetrieve><allowBridging>false</allowBridging><warningTone>none</warningTone><useUserPrimaryWithAlternateSetting>false</useUserPrimaryWithAlternateSetting><allowSimultaneousPrimaryAndAlternate>false</allowSimultaneousPrimaryAndAlternate><restrictCallRetrieveOfPrimary>false</restrictCallRetrieveOfPrimary><restrictCallBridgingOfPrimary>false</restrictCallBridgingOfPrimary></sub:sharedCallAppearance><sub:speedDial8><codes></codes></sub:speedDial8><sub:speedDial100><codes></codes></sub:speedDial100><sub:terminating-identity-presentation active="true"></sub:terminating-identity-presentation><sub:terminating-identity-presentation-restriction active="false"><default-behaviour>presentation-not-restricted</default-behaviour></sub:terminating-identity-presentation-restriction><sub:voiceMessagingUser active="false"><useDefaultMailServer>true</useDefaultMailServer><useMWI>true</useMWI><sendPrivateEmail>false</sendPrivateEmail><privateEmailAddress xsi:nil="true"></privateEmailAddress><sendNotification>false</sendNotification><notificationEmailAddress xsi:nil="true"></notificationEmailAddress><transferOnZero>false</transferOnZero><transferOnZeroDN xsi:nil="true"></transferOnZeroDN><phoneActive>true</phoneActive><carbonCopy>false</carbonCopy><carbonCopyEmailAddress xsi:nil="true"></carbonCopyEmailAddress><forwardOnBusy>true</forwardOnBusy><forwardOnNoAnswer>true</forwardOnNoAnswer><forwardAlways>false</forwardAlways><vmAliases></vmAliases><defaultMailServer xsi:nil="true"></defaultMailServer><alternateMailServer xsi:nil="true"></alternateMailServer><voiceMessagingGreetings></voiceMessagingGreetings><distributionList xsi:nil="true"></distributionList></sub:voiceMessagingUser><sub:voicePortalCalling active="true"></sub:voicePortalCalling></services></prov><ims><scscfName xsi:nil="true"></scscfName></ims><dynamic><hostingAS>10.9.55.21</hostingAS><authenticationFailed>false</authenticationFailed><dynamicLocations><entry><addressOfRecord>5146976608@mtlasdev55.net</addressOfRecord><contact>sip:10.9.55.11:5061</contact><qValue>500</qValue><expirationTime>2016-05-12T14:31:45.066-04:00</expirationTime><receivedTime>2016-05-11T14:31:45.107-04:00</receivedTime><privateIdentity xsi:nil="true"></privateIdentity></entry></dynamicLocations><voiceMessagingUser><voiceMessagingMailboxFull>false</voiceMessagingMailboxFull><messageSummary xsi:nil="true"></messageSummary><savedMessages xsi:nil="true"></savedMessages></voiceMessagingUser><userSubscriptions></userSubscriptions><endpointSubscriptions><entry><targetKey>5146976608@mtlasdev55.net</targetKey><eventPackage>ASFeature</eventPackage><subscriptionType>SIP</subscriptionType><subscriberIdentifier>5146976608@mtlasdev55.net:5060</subscriberIdentifier><subscriberIsUser>true</subscriberIsUser><subscriptionKey>as-feature-event|91355aaa-80fa510d-66f803c0@192.168.22.64|2117079058-1462990242258</subscriptionKey><subscriptionData>NOTIFY sip:5146976608@192.168.22.64 SIP/2.0
+From:&lt;sip:5146976608@mtlasdev55.net&gt;;tag=2117079058-1462990242258
+To:"Polycom Line 2"&lt;sip:5146976608@mtlasdev55.net&gt;;tag=D0CA503E-4C8F5361
+Call-ID:91355aaa-80fa510d-66f803c0@192.168.22.64
+Event:as-feature-event
+Route:&lt;sip:10.9.55.11:5061;lr&gt;,&lt;sip:5146976608@192.168.22.64&gt;
+Contact:&lt;sip:5146976608@192.168.22.64&gt;
+
+</subscriptionData><applicationSpecificData>
+</applicationSpecificData><privateIdentity xsi:nil="true"></privateIdentity></entry></endpointSubscriptions><listSubscriptions></listSubscriptions><xsiChannels></xsiChannels><perDeviceState><entry><addressOfRecord>5146976608@mtlasdev55.net</addressOfRecord><csMediaOnlySupported>false</csMediaOnlySupported><privateIdentity xsi:nil="true"></privateIdentity><instanceId xsi:nil="true"></instanceId><featureParams xsi:nil="true"></featureParams><accessNetworkInfo>IEEE-802.11b;isp=abc;network=4011</accessNetworkInfo></entry></perDeviceState></dynamic></entry>
+
+
+2016.05.11 14:32:33:549 EDT | FieldDebug | Generic
+
+	Received User Profile for xpath: /sub:broadworks/subscriber/users/entry[prov/identities/devices/entry/addressOfRecord='5146976608@mtlasdev55.net']
+
+2016.05.11 14:32:33:550 EDT | Info       | Sip | +15146976608 | callhalf-17
+
+	$ new CHSS > +15146976608 >  > callhalf-17
+
+2016.05.11 14:32:33:550 EDT | FieldDebug | Generic
+
+	Adding User: 5146976608@mtlasdev55.net to local map
+
+2016.05.11 14:32:33:550 EDT | Info       | Sip | +15146976608 | callhalf-17:0
+
+	udp 1506 Bytes IN from 10.9.55.11:5061
+INVITE sip:603@mtlasdev55.net;user=phone SIP/2.0
+Via: SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK3b0cc8bac3f807f244801129a80220f08c3cb88e
+Via: SIP/2.0/UDP 192.168.22.64;branch=z9hG4bK46515593B2EAD4C
+From: "Polycom Line 2" <sip:5146976608@mtlasdev55.net>;tag=CF7CBB63-537905B6
+To: <sip:603@mtlasdev55.net;user=phone>
+CSeq: 1 INVITE
+Call-ID: ecd9e08f-6b41222-1d6f505@192.168.22.64
+Contact: <sip:5146976608@192.168.22.64>
+Allow: INVITE,ACK,BYE,CANCEL,OPTIONS,INFO,MESSAGE,SUBSCRIBE,NOTIFY,PRACK,UPDATE,REFER
+User-Agent: PolycomSoundPointIP-SPIP_550-UA/4.0.3.7562
+Accept-Language: en
+Supported: 100rel,replaces
+Allow-Events: conference,talk,hold
+Max-Forwards: 69
+Content-Type: application/sdp
+Record-Route: <sip:10.9.55.11:5061;lr>
+Route: <sip:10.9.55.21:5060;lr;orig>
+Route: <sip:40F28180263789B6@10.9.55.11:5061;lr;orig>
+P-Asserted-Identity: "john8 north" <sip:5146976608@mtlasdev55.net>
+P-Served-User: "john8 north" <sip:5146976608@mtlasdev55.net>;regstate=reg;sescase=orig
+P-Access-Network-Info: IEEE-802.11b; isp=abc;network=4011
+P-Charging-Vector: icid-value=A5CF34A5DBC0367C;orig-ioi=mtlasdev55.net
+P-Charging-Function-Addresses: ecf=rf.server.mtl.broadsoft.com
+Content-Length: 296
+
+v=0
+o=- 1464869883 1464869883 IN IP4 192.168.22.64
+s=Polycom IP Phone
+c=IN IP4 192.168.22.64
+t=0 0
+a=sendrecv
+m=audio 2234 RTP/AVP 0 8 18 9 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:9 G722/8000
+a=rtpmap:101 telephone-event/8000
+
+
+2016.05.11 14:32:33:550 EDT | Info       | Sip | +15146976608 | callhalf-17:0
+
+	udp 363 Bytes OUT to 10.9.55.11:5061
+SIP/2.0 100 Trying
+Via:SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK3b0cc8bac3f807f244801129a80220f08c3cb88e,SIP/2.0/UDP 192.168.22.64;branch=z9hG4bK46515593B2EAD4C
+From:"Polycom Line 2"<sip:5146976608@mtlasdev55.net>;tag=CF7CBB63-537905B6
+To:<sip:603@mtlasdev55.net;user=phone>
+Call-ID:ecd9e08f-6b41222-1d6f505@192.168.22.64
+CSeq:1 INVITE
+Content-Length:0
+
+
+
+2016.05.11 14:32:33:550 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Event: com.broadsoft.events.sip.SipInviteEvent
+
+2016.05.11 14:32:33:551 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	call: 1  old State: IDLE  new State: INVITING
+
+2016.05.11 14:32:33:551 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	Transforming Event: com.broadsoft.events.sip.SipInviteEvent
+
+2016.05.11 14:32:33:551 EDT | FieldDebug | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	Merging UnknownHeaders:
+	oldProxyUnknownHeaders: null
+	incomingUnknownHeaders: [User-Agent: PolycomSoundPointIP-SPIP_550-UA/4.0.3.7562]
+	UnknownHeaders: no header to store
+
+2016.05.11 14:32:33:551 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	Connection - old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2016.05.11 14:32:33:552 EDT | Info       | CallP | Call Manager | +15146976608 | South_as55 | callhalf-17
+
+	Processing Event: com.broadsoft.events.iwp.ConnectRequestEvent {SipEndpoint.callhalf-17:0,CHCallManager.callhalf-17}
+
+2016.05.11 14:32:33:552 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	old State: IDLE  new State: ALERTING
+
+2016.05.11 14:32:33:554 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Event: com.broadsoft.events.callhalf.InvitationEvent {CHCallManager.callhalf-17,CHCall.callhalf-17:0}
+
+2016.05.11 14:32:33:554 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Connection - old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2016.05.11 14:32:33:554 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Event: com.broadsoft.events.callhalf.InvitationEvent
+	Consumed by: com.broadsoft.services.translation.TranslationServiceOrigInstance
+
+2016.05.11 14:32:33:554 EDT | FieldDebug | Generic
+
+	Fetching user profile from Subscriber Agent using xpath: /sub:broadworks/subscriber/users/entry[uniqueKey='5146976603@mtlasdev55.net']
+
+2016.05.11 14:32:33:555 EDT | Info       | SubscriberSubsystem
+
+	Executing read of /sub:broadworks/subscriber/users/entry[uniqueKey='5146976603@mtlasdev55.net']
+
+2016.05.11 14:32:33:560 EDT | FieldDebug | SubscriberSubsystem
+
+	Cache hit on user[5146976603@mtlasdev55.net]
+
+2016.05.11 14:32:33:560 EDT | FieldDebug | SubscriberSubsystem
+
+	Fragment loaded, completing read into user[5146976603@mtlasdev55.net]
+
+2016.05.11 14:32:33:560 EDT | Info       | SubscriberSubsystem
+
+	Read completed on /sub:broadworks/subscriber/users/entry[uniqueKey='5146976603@mtlasdev55.net']
+<entry xmlns:sub="http://schema.broadsoft.com/Subscribers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><uniqueKey>5146976603@mtlasdev55.net</uniqueKey><prov><info><userId>south03@mtlasdev55.net</userId><firstName>john3</firstName><lastName>south</lastName><firstNameUnicode>john3</firstNameUnicode><lastNameUnicode>south</lastNameUnicode><timeZone>US/Eastern</timeZone><languageKey>English</languageKey><userType>User</userType><emailAddress xsi:nil="true"></emailAddress><clid xsi:nil="true"></clid><ncosKey xsi:nil="true"></ncosKey><groupKey>763969050</groupKey><departmentKey xsi:nil="true"></departmentKey><title xsi:nil="true"></title><mobileODN xsi:nil="true"></mobileODN><pagerODN xsi:nil="true"></pagerODN></info><identities><dnProperties><entry><type>Main</type><dn>+15146976603</dn><extension>603</extension><ringPattern>Normal</ringPattern></entry></dnProperties><devices><entry><accessDeviceKey>705446593</accessDeviceKey><addressOfRecord>5146976603@mtlasdev55.net</addressOfRecord><type>Main</type><active>true</active><allowOrigination>true</allowOrigination><allowTermination>true</allowTermination><staticLocation xsi:nil="true"></staticLocation><privateIdentity xsi:nil="true"></privateIdentity><allowVideo>true</allowVideo></entry></devices><aliases></aliases></identities><policies><callProcessingPolicy><callLimitPolicy><useOwnPolicy>false</useOwnPolicy><ownPolicy xsi:nil="true"></ownPolicy></callLimitPolicy><mediaPolicy><useOwnPolicy>false</useOwnPolicy><ownPolicy xsi:nil="true"></ownPolicy></mediaPolicy><clidPolicy><useOwnPolicy>false</useOwnPolicy><ownPolicy xsi:nil="true"></ownPolicy></clidPolicy><redirectedCOLPPrivacy>NoPrivacy</redirectedCOLPPrivacy><send181ResponseOnRedirectedCalls>Never</send181ResponseOnRedirectedCalls></callProcessingPolicy><devicePolicy><callDecline>false</callDecline></devicePolicy></policies><sharedServiceData><noAnswerTimer>3</noAnswerTimer><usePersonalizedName>false</usePersonalizedName><voicePortalAutoLogin>false</voicePortalAutoLogin><personalizedNameMediaType xsi:nil="true"></personalizedNameMediaType><lastPasscodeModified>1462989479474</lastPasscodeModified><voicePortalFailNotificationSent>false</voicePortalFailNotificationSent><failedVoicePortalAttempts>0</failedVoicePortalAttempts><voicePortalPasswordNotSet>true</voicePortalPasswordNotSet><voicePortalPassword>0000</voicePortalPassword><capSharedKey xsi:nil="true"></capSharedKey><loginPassword>b0846ffd660576690f30ac56442acb7487d99063</loginPassword><ocicApps xsi:nil="true"></ocicApps><customMediaFilePath>customMediaFiles/7/6396/763969050/131447826</customMediaFilePath><schedules></schedules><communicationBarringAuthorizationCodes></communicationBarringAuthorizationCodes><sustainedAuthorizationCode xsi:nil="true"></sustainedAuthorizationCode></sharedServiceData><services><sub:broadworksAnywhere active="false"><alertAll>false</alertAll><locations></locations></sub:broadworksAnywhere><sub:callForwardingAlways active="false"><destination xsi:nil="true"></destination><ringSplashActive>false</ringSplashActive></sub:callForwardingAlways><sub:callForwardingBusy active="false" xsi:type="sub:CallForwardingType"><destination xsi:nil="true"></destination></sub:callForwardingBusy><sub:callForwardingNoAnswer active="false"><destination xsi:nil="true"></destination></sub:callForwardingNoAnswer><sub:originating-identity-presentation-restriction active="false"><default-behaviour>presentation-not-restricted</default-behaviour></sub:originating-identity-presentation-restriction><sub:callTransfer><recallActive>false</recallActive><recallNoAnswerRings>4</recallNoAnswerRings><blindTransferDiversionInhibited>false</blindTransferDiversionInhibited><consultativeCallDiversionInhibited>false</consultativeCallDiversionInhibited><busyCampOn>false</busyCampOn><campOnTime>120</campOnTime></sub:callTransfer><sub:communication-waiting active="true"></sub:communication-waiting><sub:commpilotCallManager active="true"></sub:commpilotCallManager><sub:customRingbackUser active="false"><rules></rules></sub:customRingbackUser><sub:doNotDisturb active="false"><ringSplashActive>false</ringSplashActive></sub:doNotDisturb><sub:originating-identity-presentation active="true"></sub:originating-identity-presentation><sub:sharedCallAppearance active="false"><alertAll>false</alertAll><allowRetrieve>false</allowRetrieve><allowBridging>false</allowBridging><warningTone>none</warningTone><useUserPrimaryWithAlternateSetting>false</useUserPrimaryWithAlternateSetting><allowSimultaneousPrimaryAndAlternate>false</allowSimultaneousPrimaryAndAlternate><restrictCallRetrieveOfPrimary>false</restrictCallRetrieveOfPrimary><restrictCallBridgingOfPrimary>false</restrictCallBridgingOfPrimary></sub:sharedCallAppearance><sub:speedDial8><codes></codes></sub:speedDial8><sub:speedDial100><codes></codes></sub:speedDial100><sub:terminating-identity-presentation active="true"></sub:terminating-identity-presentation><sub:terminating-identity-presentation-restriction active="false"><default-behaviour>presentation-not-restricted</default-behaviour></sub:terminating-identity-presentation-restriction><sub:voiceMessagingUser active="false"><useDefaultMailServer>true</useDefaultMailServer><useMWI>true</useMWI><sendPrivateEmail>false</sendPrivateEmail><privateEmailAddress xsi:nil="true"></privateEmailAddress><sendNotification>false</sendNotification><notificationEmailAddress xsi:nil="true"></notificationEmailAddress><transferOnZero>false</transferOnZero><transferOnZeroDN xsi:nil="true"></transferOnZeroDN><phoneActive>true</phoneActive><carbonCopy>false</carbonCopy><carbonCopyEmailAddress xsi:nil="true"></carbonCopyEmailAddress><forwardOnBusy>true</forwardOnBusy><forwardOnNoAnswer>true</forwardOnNoAnswer><forwardAlways>false</forwardAlways><vmAliases></vmAliases><defaultMailServer xsi:nil="true"></defaultMailServer><alternateMailServer xsi:nil="true"></alternateMailServer><voiceMessagingGreetings></voiceMessagingGreetings><distributionList xsi:nil="true"></distributionList></sub:voiceMessagingUser><sub:voicePortalCalling active="true"></sub:voicePortalCalling></services></prov><ims><scscfName xsi:nil="true"></scscfName></ims><dynamic><hostingAS>10.9.55.21</hostingAS><authenticationFailed>false</authenticationFailed><dynamicLocations><entry><addressOfRecord>5146976603@mtlasdev55.net</addressOfRecord><contact>sip:10.9.55.11:5061</contact><qValue>500</qValue><expirationTime>2016-05-12T14:31:45.077-04:00</expirationTime><receivedTime>2016-05-11T14:31:45.104-04:00</receivedTime><privateIdentity xsi:nil="true"></privateIdentity></entry></dynamicLocations><voiceMessagingUser><voiceMessagingMailboxFull>false</voiceMessagingMailboxFull><messageSummary xsi:nil="true"></messageSummary><savedMessages xsi:nil="true"></savedMessages></voiceMessagingUser><userSubscriptions></userSubscriptions><endpointSubscriptions></endpointSubscriptions><listSubscriptions></listSubscriptions><xsiChannels></xsiChannels><perDeviceState><entry><addressOfRecord>5146976603@mtlasdev55.net</addressOfRecord><csMediaOnlySupported>false</csMediaOnlySupported><privateIdentity xsi:nil="true"></privateIdentity><instanceId xsi:nil="true"></instanceId><featureParams xsi:nil="true"></featureParams><accessNetworkInfo>IEEE-802.11b;isp=abc;network=4011</accessNetworkInfo></entry></perDeviceState></dynamic></entry>
+
+
+2016.05.11 14:32:33:560 EDT | FieldDebug | Generic
+
+	Received User Profile for xpath: /sub:broadworks/subscriber/users/entry[uniqueKey='5146976603@mtlasdev55.net']
+
+2016.05.11 14:32:33:561 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Service Event: com.broadsoft.events.callhalf.TranslationResultEvent
+
+2016.05.11 14:32:33:561 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Address = 603 , Call Type = Group
+
+2016.05.11 14:32:33:561 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	old displayMode: [allowNumber=true allowName=true allowCOLP=true lockStatus=UNLOCKED]  new displayMode: [allowNumber=true allowName=true allowCOLP=false lockStatus=LOCKED]
+
+2016.05.11 14:32:33:561 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Event: com.broadsoft.events.callhalf.TranslationResultEvent
+	Consumed by: com.broadsoft.apm.callp.components.TranslationManagerCallImpl
+
+2016.05.11 14:32:33:561 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Event: com.broadsoft.apm.asservicemanagement.ResumeEvent
+
+2016.05.11 14:32:33:561 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Resuming Event: com.broadsoft.events.callhalf.InvitationEvent {CHCallManager.callhalf-17,CHCall.callhalf-17:0}
+	After Service Instance: com.broadsoft.services.translation.TranslationServiceOrigInstance
+
+2016.05.11 14:32:33:562 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Interrupting InvitationEvent processing - online billing credits required
+
+2016.05.11 14:32:33:570 EDT | FieldDebug | Accounting
+
+	Mapping RoActiveSession for south08@mtlasdev55.net, callId=17:0, ssk=localHost8
+
+2016.05.11 14:32:33:570 EDT | Info       | Diameter | Ro
+
+	Mapping Diameter Ro session AccountingID.17:0,SessionKey.localHost8,Diameter.xs.client.mtl.broadsoft.com;1462991553566;0|1
+
+2016.05.11 14:32:33:572 EDT | FieldDebug | Accounting
+
+	Sending CCR[Initial] with callId=17:0, ssk=localHost8
+
+2016.05.11 14:32:33:577 EDT | Info       | Diameter | Ro | xs.client.mtl.broadsoft.com;1462991553566;0|1
+
+	Queueing INITIAL_REQUEST in state RoClientStatePendingRouteSet
+
+2016.05.11 14:32:33:577 EDT | FieldDebug | Accounting
+
+	Starting TX Timer id=6 for 5000 ms
+
+2016.05.11 14:32:33:577 EDT | Info       | Accounting
+
+	CALL ORIGINATION ACCOUNTING EVENT
+	Time Stamp: Wed May 11 14:32:33 EDT 2016 (1462991553542)
+	Accounting ID: 17:0
+	Local Address: +15146976608@mtlasdev55.net;user=phone
+	Local Group Name: South_as55
+	Remote Address: +15146976603@mtlasdev55.net;user=phone
+	Call Type: Group
+	Service Provider ID: MtlASDev
+	Time Zone: US/Eastern
+	Local Group Address: null
+	Local Department Name: null
+	First Redirecting Number: null
+	First RN Pres. Indicator: PUBLIC
+	First Redirecting Reason: null
+	Last Redirecting Number : null
+	Last RN Pres. Indicator : PUBLIC
+	Last Redirecting Reason: null
+	P-Charging-Vector:icid-value=A5CF34A5DBC0367C;orig-ioi=mtlasdev55.net
+	Output Call Log: false
+	UserId: south08@mtlasdev55.net
+	Can have device: true
+	P-Charging-Function-Addresses:ecf=rf.server.mtl.broadsoft.com
+	Related Call Id Name: null
+	Related Call Id Reason: null
+	Primary Device Lineport: 5146976608@mtlasdev55.net
+	Prepaid Event Handler Key: callhalf-17:0
+	Virtual On-Net Type: null
+	Office Zone: null
+	Primary Zone: null
+	Roaming MSC Address: null
+	Charge Number: null
+	rfSessionID: xs.client.mtl.broadsoft.com;1462991553563;0|1
+	Calling Party Addresses List: [sip:5146976608@mtlasdev55.net]
+	Request-URI: sip:603@mtlasdev55.net;user=phone
+	Private Identity: null
+	Dialed Address: 603@mtlasdev55.net;user=phone
+	Calling Number: +15146976608@mtlasdev55.net;user=phone
+	Calling Number Pres. Indicator: PUBLIC
+	Local Address Override: null
+	Local Time Zone Override: null
+	Local Dept Name Override: null
+	Local User Id Override: null
+	Calling Party Category: null
+	Access CallID: ecd9e08f-6b41222-1d6f505@192.168.22.64
+	Called Party Name: john3 south
+	Called Pres. Indicator: PUBLIC
+	P-Access-Network-Info:IEEE-802.11b;isp=abc;network=4011
+	P-Access-Network-Info:IEEE-802.11b;isp=abc;network=4011
+	Configurable CLID: null
+	Origination Method:  Not set 
+	Outside Access Code: null
+	LocalSDP: present (OFFER)
+	Dialing Mode: extension
+	Locations: 5146976608@mtlasdev55.net 
+	Location Type: Primary Device 
+	Can Accept No Quota: true
+	Location Network: Fixed 
+
+
+2016.05.11 14:32:33:583 EDT | FieldDebug | Diameter | Base | Node "xs" | Connection "rf.server.mtl.broadsoft.com", id=1 | Transport
+
+	tcp 1652 Bytes OUT to 10.9.55.11:55971
+Message header:
+	flags=RP
+	commandCode=272 (CCR)
+	applicationId=4
+	hopByHopId=671325896
+	endToEndId=1973420047
+AVPs:
+	Session-Id: code=263, flags=M, UTF8String, value=xs.client.mtl.broadsoft.com;1462991553566;0|1
+	Origin-Host: code=264, flags=M, DiameterIdentity, value=xs.client.mtl.broadsoft.com
+	Origin-Realm: code=296, flags=M, DiameterIdentity, value=TestRealm
+	Destination-Realm: code=283, flags=M, DiameterIdentity, value=TestRealm
+	Destination-Host: code=293, flags=M, DiameterIdentity, value=rf.server.mtl.broadsoft.com
+	CC-Request-Type: code=416, flags=M, Enumerated, value=INITIAL_REQUEST
+	CC-Request-Number: code=415, flags=M, Unsigned32, value=0 Description: Unknown
+	Auth-Application-Id: code=258, flags=M, Unsigned32, value=4 Description: Unknown
+	Origin-State-Id: code=278, flags=M, Unsigned32, value=1462990682 Description: Unknown
+	User-Name: code=1, flags=M, UTF8String, value=5146976608@mtlasdev55.net
+	Event-Timestamp: code=55, flags=M, Time, value=Wed May 11 14:32:33 EDT 2016
+	Service-Context-Id: code=461, flags=M, UTF8String, value=8.32260@3gpp.org
+	Subscription-Id: code=443, flags=M, Grouped, value=
+	  Subscription-Id-Type: code=450, flags=M, Integer32, value=2
+	  Subscription-Id-Data: code=444, flags=M, UTF8String, value=sip:5146976608@mtlasdev55.net
+	Service-Information: code=873, vendorId=10415, flags=VM, Grouped, value=
+	  PS-Information: code=874, vendorId=10415, flags=VM, Grouped, value=
+	    3GPP-MS-TimeZone: code=23, vendorId=10415, flags=VM, OctetString, value=6901 (printable chars): "i\u0001"
+	  IMS-Information: code=876, vendorId=10415, flags=VM, Grouped, value=
+	    Event-Type: code=823, vendorId=10415, flags=VM, Grouped, value=
+	      Sip-Method: code=824, vendorId=10415, flags=VM, UTF8String, value=INVITE
+	    Node-Functionality: code=862, vendorId=10415, flags=VM, Enumerated, value=AS
+	    Role-of-Node: code=829, vendorId=10415, flags=VM, Enumerated, value=ORIGINATING-ROLE
+	    User-Session-Id: code=830, vendorId=10415, flags=VM, UTF8String, value=ecd9e08f-6b41222-1d6f505@192.168.22.64
+	    Calling-Party-Address: code=831, vendorId=10415, flags=VM, UTF8String, value=tel:+15146976608
+	    Called-Party-Address: code=832, vendorId=10415, flags=VM, UTF8String, value=tel:+15146976603
+	    Requested-Party-Address: code=1251, vendorId=10415, flags=VM, UTF8String, value=sip:603@mtlasdev55.net;user=phone
+	    Time-Stamps: code=833, vendorId=10415, flags=VM, Grouped, value=
+	      SIP-Request-Timestamp: code=834, vendorId=10415, flags=VM, Time, value=Wed May 11 14:32:33 EDT 2016
+	      SIP-Request-Timestamp-Fraction: code=2301, vendorId=10415, flags=VM, Unsigned32, value=542 Description: Unknown
+	    Inter-Operator-Identifier: code=838, vendorId=10415, flags=VM, Grouped, value=
+	      Originating-IOI: code=839, vendorId=10415, flags=VM, UTF8String, value=mtlasdev55.net
+	    IMS-Charging-Identifier: code=841, vendorId=10415, flags=VM, UTF8String, value=A5CF34A5DBC0367C
+	    Access-Network-Information: code=1263, vendorId=10415, flags=VM, UTF8String, value=IEEE-802.11b;isp=abc;network=4011
+	BWAS-Radius-Encoding-Version: code=0, vendorId=6431, flags=V, UTF8String, value=20.0
+	BWAS-Record-id: code=1, vendorId=6431, flags=V, UTF8String, value=0000000001080027B92F8020160511183233.5421-040000
+	BWAS-Service-provider: code=2, vendorId=6431, flags=V, UTF8String, value=MtlASDev
+	BWAS-Type: code=3, vendorId=6431, flags=V, UTF8String, value=Normal
+	BWAS-User-Number: code=4, vendorId=6431, flags=V, UTF8String, value=+15146976608
+	BWAS-Direction: code=6, vendorId=6431, flags=V, UTF8String, value=Originating
+	BWAS-Calling-Number: code=7, vendorId=6431, flags=V, UTF8String, value=+15146976608
+	BWAS-Calling-Presentation-Indic: code=8, vendorId=6431, flags=V, UTF8String, value=Public
+	BWAS-Called-Number: code=9, vendorId=6431, flags=V, UTF8String, value=+15146976603
+	BWAS-Start-Time: code=10, vendorId=6431, flags=V, UTF8String, value=20160511183233.542
+	BWAS-User-Timezone: code=11, vendorId=6431, flags=V, UTF8String, value=1-040000
+	BWAS-Answer-Indic: code=12, vendorId=6431, flags=V, UTF8String, value=No
+	BWAS-Network-Type: code=16, vendorId=6431, flags=V, UTF8String, value=VoIP
+	BWAS-Dialed-Digits: code=18, vendorId=6431, flags=V, UTF8String, value=603
+	BWAS-Access-Device-Address: code=27, vendorId=6431, flags=V, UTF8String, value=192.168.22.64
+	BWAS-Access-Callid: code=28, vendorId=6431, flags=V, UTF8String, value=ecd9e08f-6b41222-1d6f505@192.168.22.64
+	BWAS-Group: code=32, vendorId=6431, flags=V, UTF8String, value=South_as55
+	BWAS-Charge-Indic: code=42, vendorId=6431, flags=V, UTF8String, value=n
+	BWAS-Local-Callid: code=45, vendorId=6431, flags=V, UTF8String, value=17:0
+	BWAS-Charging-Vector-Key: code=59, vendorId=6431, flags=V, UTF8String, value=A5CF34A5DBC0367C
+	BWAS-Charging-Vector-Orig: code=61, vendorId=6431, flags=V, UTF8String, value=mtlasdev55.net
+	BWAS-UserId: code=121, vendorId=6431, flags=V, UTF8String, value=south08@mtlasdev55.net
+	BWAS-Other-Party-Name: code=122, vendorId=6431, flags=V, UTF8String, value=john3 south
+	BWAS-Other-Party-Name-Pres-Indic: code=123, vendorId=6431, flags=V, UTF8String, value=Public
+	BWAS-Access-Network-Info: code=144, vendorId=6431, flags=V, UTF8String, value=IEEE-802.11b;isp=abc;network=4011
+	BWAS-Charging-Function-Addresses: code=145, vendorId=6431, flags=V, UTF8String, value=ecf=rf.server.mtl.broadsoft.com
+	BWAS-AS-Call-Type: code=231, vendorId=6431, flags=V, UTF8String, value=Group
+	BWAS-Location: code=312, vendorId=6431, flags=V, UTF8String, value=5146976608@mtlasdev55.net
+	BWAS-Location-Type: code=313, vendorId=6431, flags=V, UTF8String, value=Primary Device
+	BWAS-Location-Network: code=428, vendorId=6431, flags=V, UTF8String, value=Fixed
+	BWAS-Access-Network-Info-From-Register: code=430, vendorId=6431, flags=V, UTF8String, value=IEEE-802.11b;isp=abc;network=4011
+
+
+2016.05.11 14:32:33:590 EDT | FieldDebug | Diameter | Base | Node "xs" | Connection "rf.server.mtl.broadsoft.com", id=1 | Transport
+
+	tcp 288 Bytes IN from 10.9.55.11:55971
+Message header:
+	flags=P
+	commandCode=272 (CCA)
+	applicationId=4
+	hopByHopId=671325896
+	endToEndId=1973420047
+AVPs:
+	Session-Id: code=263, flags=M, UTF8String, value=xs.client.mtl.broadsoft.com;1462991553566;0|1
+	Origin-Host: code=264, flags=M, DiameterIdentity, value=rf.server.mtl.broadsoft.com
+	Origin-Realm: code=296, flags=M, DiameterIdentity, value=TestRealm
+	Auth-Application-Id: code=258, flags=M, Unsigned32, value=4 Description: Unknown
+	CC-Request-Type: code=416, flags=M, Enumerated, value=INITIAL_REQUEST
+	CC-Request-Number: code=415, flags=M, Unsigned32, value=0 Description: Unknown
+	Result-Code: code=268, flags=M, Unsigned32, value=2001 Description: Diameter Success
+	Validity-Time: code=448, flags=M, Unsigned32, value=1000 Description: Unknown
+	Credit-Control-Failure-Handling: code=427, flags=M, Enumerated, value=CONTINUE
+	CC-Session-Failover: code=418, flags=M, Enumerated, value=FAILOVER_NOT_SUPPORTED
+	Multiple-Services-Credit-Control: code=456, flags=M, Grouped, value=
+	  Granted-Service-Unit: code=431, flags=M, Grouped, value=
+	    CC-Time: code=420, flags=M, Unsigned32, value=30 Description: Unknown
+	  Time-Quota-Threshold: code=868, vendorId=10415, flags=VM, Unsigned32, value=15 Description: Unknown
+	  Trigger: code=1264, vendorId=10415, flags=VM, Grouped, value=
+	    Trigger-Type: code=870, vendorId=10415, flags=VM, Enumerated, value=CHANGE_IN_MEDIA_COMPOSITION
+
+
+2016.05.11 14:32:33:592 EDT | FieldDebug | Accounting
+
+	com.broadsoft.events.accounting.AccountingCcaReceivedEvent
+
+2016.05.11 14:32:33:592 EDT | FieldDebug | Accounting
+
+	CCA[Initial], callId=17:0, ssk=localHost8
+
+2016.05.11 14:32:33:592 EDT | FieldDebug | Accounting
+
+	Stopping TX Timer id=6
+
+2016.05.11 14:32:33:594 EDT | Info       | Accounting
+
+	Decoded RoCCAResponse with Result-Code 2001:
+validityTime: 1000, grantedTime: 30, timeQuotaThreshold: 15
+CCFH: CONTINUE
+Trigger mediaComposition: true
+Trigger accessNetworksChange: false
+Announcement-Instructions not present
+
+
+2016.05.11 14:32:33:595 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Service Event: com.broadsoft.events.accounting.AccountingInitialCreditResponseEvent - GRANTED
+
+2016.05.11 14:32:33:595 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Resuming InvitationEvent processing - online billing credits GRANTED
+
+2016.05.11 14:32:33:596 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	old State: IDLE  new State: ALERTING
+
+2016.05.11 14:32:33:596 EDT | Info       | Sip | +15146976603 | callhalf-18
+
+	$ new CHSS > +15146976603 > callhalf-17:0 > callhalf-18
+
+2016.05.11 14:32:33:596 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Event: com.broadsoft.events.accounting.AccountingInitialCreditResponseEvent - GRANTED
+	Consumed by: com.broadsoft.apm.callp.handlers.call.PrepaidOriginationCallServiceHandler
+
+2016.05.11 14:32:33:596 EDT | Info       | CallP | Call Manager | +15146976603 | PSTN | callhalf-18
+
+	Processing Event: com.broadsoft.events.callhalf.TerminationEvent : callhalf-17:0 {CHCall.callhalf-17:0,CHCallManager.callhalf-18}
+
+2016.05.11 14:32:33:596 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	Processing Event: com.broadsoft.events.callhalf.InvitationEvent {CHCall.callhalf-17:0,CHCall.callhalf-18:0}
+
+2016.05.11 14:32:33:596 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	Connection - old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2016.05.11 14:32:33:596 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	old State: IDLE  new State: ALERTING
+
+2016.05.11 14:32:33:596 EDT | Info       | CallP | Call Manager | +15146976603 | PSTN | callhalf-18
+
+	Processing Event: com.broadsoft.events.callhalf.InvitationEvent {CHCall.callhalf-18:0,CHCallManager.callhalf-18}
+
+2016.05.11 14:32:33:596 EDT | Info       | CallP | Service | Network Routing | +15146976603 | PSTN | callhalf-18:0
+
+	Network Device Selected: +15146976603@mtlasdev55.net
+
+2016.05.11 14:32:33:597 EDT | Info       | CallP | SIP Endpoint | +15146976603 | callhalf-18:0
+
+	old State: IDLE  new State: ALERTING
+
+2016.05.11 14:32:33:597 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	Connection - old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2016.05.11 14:32:33:597 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Event: com.broadsoft.events.callhalf.LinkRemoteCallEvent : callhalf-18:0 {CHCall.callhalf-18:0,CHCall.callhalf-17:0}
+
+2016.05.11 14:32:33:597 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	Transforming Event: com.broadsoft.events.iwp.ConnectRequestEvent {CHCallManager.callhalf-18,SipEndpoint.callhalf-18:0}
+
+2016.05.11 14:32:33:597 EDT | FieldDebug | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	Merging UnknownHeaders:
+	oldProxyUnknownHeaders: null
+	incomingUnknownHeaders: [User-Agent: PolycomSoundPointIP-SPIP_550-UA/4.0.3.7562]
+	UnknownHeaders: no header to store
+
+2016.05.11 14:32:33:597 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	call: 1  old State: IDLE  new State: INVITING
+
+2016.05.11 14:32:33:597 EDT | Info       | CallP | Call Manager | +15146976603 | PSTN | callhalf-18
+
+	Processing Event: com.broadsoft.events.callhalf.AccountingInfoEvent {SipEndpoint.callhalf-18:0,CHCallManager.callhalf-18}
+
+2016.05.11 14:32:33:597 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	Processing Event: com.broadsoft.events.callhalf.AccountingInfoEvent {CHCallManager.callhalf-18,CHCall.callhalf-18:0}
+
+2016.05.11 14:32:33:598 EDT | Info       | Sip | +15146976603 | callhalf-18:0
+
+	udp 1494 Bytes OUT to 10.9.55.11:5061
+INVITE sip:+15146976603@mtlasdev55.net;user=phone SIP/2.0
+Via:SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594655-814538767-1462991553597-
+From:"john8 south"<sip:+15146976608@mtlasdev55.net;user=phone>;tag=814538767-1462991553597-
+To:"john3 south"<sip:+15146976603@mtlasdev55.net;user=phone>
+Call-ID:BW143233597110516-1386164150@10.9.55.21
+CSeq:277594655 INVITE
+Contact:<sip:10.9.55.21:5060>
+P-Asserted-Identity:"john8 south"<sip:5146976608@mtlasdev55.net>,"john8 south"<tel:+15146976608>
+Privacy:none
+Route:<sip:40F28180263789B6@10.9.55.11:5061;lr;orig>
+P-Charging-Vector:icid-value=A5CF34A5DBC0367C;orig-ioi=mtlasdev55.net
+P-Charging-Function-Addresses:ecf=rf.server.mtl.broadsoft.com
+P-Access-Network-Info:IEEE-802.11b;isp=abc;network=4011
+Supported:100rel,resource-priority
+Allow:ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,UPDATE,NOTIFY
+X-BroadWorks-DGC:user-id="south08@mtlasdev55.net";alt-address=603;ext-tracking-id="2:1"
+P-Served-User:<sip:5146976608@mtlasdev55.net>;sescase=orig
+Accept:multipart/mixed,application/media_control+xml,application/sdp,application/x-broadworks-call-center+xml
+Max-Forwards:10
+Content-Type:application/sdp
+Content-Length:273
+
+v=0
+o=BroadWorks 14 1 IN IP4 192.168.22.64
+s=-
+c=IN IP4 192.168.22.64
+t=0 0
+a=sendrecv
+m=audio 2234 RTP/AVP 0 8 18 9 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:9 G722/8000
+a=rtpmap:101 telephone-event/8000
+
+
+2016.05.11 14:32:33:598 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Event: com.broadsoft.events.callhalf.AccountingInfoEvent {CHCall.callhalf-18:0,CHCall.callhalf-17:0}
+
+2016.05.11 14:32:33:655 EDT | Info       | Sip | +15146976603 | callhalf-18:0
+
+	udp 389 Bytes IN from 10.9.55.11:5061
+SIP/2.0 100 Trying
+To: "john3 south" <sip:+15146976603@mtlasdev55.net;user=phone>
+Via: SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594655-814538767-1462991553597-
+CSeq: 277594655 INVITE
+Call-ID: BW143233597110516-1386164150@10.9.55.21
+From: "john8 south" <sip:+15146976608@mtlasdev55.net;user=phone>;tag=814538767-1462991553597-
+Content-Length: 0
+
+
+
+2016.05.11 14:32:33:655 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	Processing Event: com.broadsoft.events.sip.Sip100InfoEvent
+
+2016.05.11 14:32:33:655 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	call: 1  old State: INVITING  new State: INVITING
+
+2016.05.11 14:32:33:655 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	Transforming Event: com.broadsoft.events.sip.Sip100InfoEvent
+
+2016.05.11 14:32:33:655 EDT | Info       | CallP | Call Manager | +15146976603 | PSTN | callhalf-18
+
+	Processing Event: com.broadsoft.events.iwp.ConnectRequestAckEvent {SipEndpoint.callhalf-18:0,CHCallManager.callhalf-18}
+
+2016.05.11 14:32:33:656 EDT | Info       | CallP | Call Manager | +15146976603 | PSTN | callhalf-18
+
+	Event: com.broadsoft.events.iwp.ConnectRequestAckEvent
+	Consumed by: com.broadsoft.services.networkrouting.NetworkRoutingServiceInstance
+
+2016.05.11 14:32:33:890 EDT | Info       | Generic
+
+	SIP request received. 100 Trying sent before session created, SIP level logging differed to session.
+BW143233597110516-1386164150@10.9.55.21
++15146976603@mtlasdev55.net:5060
++15146976608@mtlasdev55.net:5060
+
+2016.05.11 14:32:33:892 EDT | Info       | Sip | +15146976608 | callhalf-19
+
+	$ new CHSS > +15146976608 >  > callhalf-19
+
+2016.05.11 14:32:33:892 EDT | Info       | Sip | +15146976608 | callhalf-19:0
+
+	udp 1718 Bytes IN from 10.9.55.11:5061
+INVITE sip:+15146976603@mtlasdev55.net;user=phone SIP/2.0
+Via: SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK29e9a6ee7a692640d3378cb8480bc38c0ae48e7b
+Via: SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK8c09599e8ff5be3488c17e8c716ae079c2f89504
+Via: SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594655-814538767-1462991553597-
+From: "john8 south" <sip:+15146976608@mtlasdev55.net;user=phone>;tag=814538767-1462991553597-
+To: "john3 south" <sip:+15146976603@mtlasdev55.net;user=phone>
+Call-ID: BW143233597110516-1386164150@10.9.55.21
+CSeq: 277594655 INVITE
+Contact: <sip:10.9.55.21:5060>
+P-Asserted-Identity: "john8 south" <sip:5146976608@mtlasdev55.net>,"john8 south" <tel:+15146976608>
+Privacy: none
+Supported: 100rel,resource-priority
+Allow: ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,UPDATE,NOTIFY
+X-BroadWorks-DGC: user-id="south08@mtlasdev55.net";alt-address=603;ext-tracking-id="2:1"
+Accept: multipart/mixed,application/media_control+xml,application/sdp,application/x-broadworks-call-center+xml
+Max-Forwards: 8
+Content-Type: application/sdp
+Record-Route: <sip:10.9.55.11:5061;lr>
+Record-Route: <sip:10.9.55.11:5061;lr>
+Route: <sip:10.9.55.21:5060;lr;term>
+Route: <sip:68B1B5BB6C58E731@10.9.55.11:5061;lr;term>
+P-Served-User: "john3 north" <sip:5146976603@mtlasdev55.net>;regstate=reg;sescase=term
+P-Charging-Vector: icid-value=A5CF34A5DBC0367C;orig-ioi=mtlasdev55.net
+Content-Length: 273
+
+v=0
+o=BroadWorks 14 1 IN IP4 192.168.22.64
+s=-
+c=IN IP4 192.168.22.64
+t=0 0
+a=sendrecv
+m=audio 2234 RTP/AVP 0 8 18 9 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:9 G722/8000
+a=rtpmap:101 telephone-event/8000
+
+
+2016.05.11 14:32:33:892 EDT | Info       | Sip | +15146976608 | callhalf-19:0
+
+	udp 547 Bytes OUT to 10.9.55.11:5061
+SIP/2.0 100 Trying
+Via:SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK29e9a6ee7a692640d3378cb8480bc38c0ae48e7b,SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK8c09599e8ff5be3488c17e8c716ae079c2f89504,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594655-814538767-1462991553597-
+From:"john8 south"<sip:+15146976608@mtlasdev55.net;user=phone>;tag=814538767-1462991553597-
+To:"john3 south"<sip:+15146976603@mtlasdev55.net;user=phone>
+Call-ID:BW143233597110516-1386164150@10.9.55.21
+CSeq:277594655 INVITE
+Content-Length:0
+
+
+
+2016.05.11 14:32:33:892 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	Processing Event: com.broadsoft.events.sip.SipInviteEvent
+
+2016.05.11 14:32:33:892 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	call: 1  old State: IDLE  new State: INVITING
+
+2016.05.11 14:32:33:892 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	Transforming Event: com.broadsoft.events.sip.SipInviteEvent
+
+2016.05.11 14:32:33:892 EDT | FieldDebug | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	Identifying terminating user with P-Served-User header, uri: sip:5146976603@mtlasdev55.net
+
+2016.05.11 14:32:33:893 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	Connection - old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2016.05.11 14:32:33:894 EDT | Info       | CallP | Call Manager | +15146976608 | PSTN | callhalf-19
+
+	Processing Event: com.broadsoft.events.iwp.ConnectRequestEvent {SipEndpoint.callhalf-19:0,CHCallManager.callhalf-19}
+
+2016.05.11 14:32:33:894 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	old State: IDLE  new State: ALERTING
+
+2016.05.11 14:32:33:894 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Processing Event: com.broadsoft.events.callhalf.InvitationEvent {CHCallManager.callhalf-19,CHCall.callhalf-19:0}
+
+2016.05.11 14:32:33:894 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Connection - old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2016.05.11 14:32:33:894 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Event: com.broadsoft.events.callhalf.InvitationEvent
+	Consumed by: com.broadsoft.services.translation.TranslationServiceOrigInstance
+
+2016.05.11 14:32:33:895 EDT | FieldDebug | Generic
+
+	Fetching user profile from Subscriber Agent using xpath: /sub:broadworks/subscriber/users/entry[prov/identities/devices/entry/addressOfRecord='5146976603@mtlasdev55.net']
+
+2016.05.11 14:32:33:895 EDT | Info       | SubscriberSubsystem
+
+	Executing read of /sub:broadworks/subscriber/users/entry[prov/identities/devices/entry/addressOfRecord='5146976603@mtlasdev55.net']
+
+2016.05.11 14:32:33:896 EDT | FieldDebug | SubscriberSubsystem
+
+	Cache hit on user[5146976603@mtlasdev55.net]
+
+2016.05.11 14:32:33:896 EDT | FieldDebug | SubscriberSubsystem
+
+	Fragment loaded, completing read into user[5146976603@mtlasdev55.net]
+
+2016.05.11 14:32:33:897 EDT | Info       | SubscriberSubsystem
+
+	Read completed on /sub:broadworks/subscriber/users/entry[prov/identities/devices/entry/addressOfRecord='5146976603@mtlasdev55.net']
+<entry xmlns:sub="http://schema.broadsoft.com/Subscribers" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><uniqueKey>5146976603@mtlasdev55.net</uniqueKey><prov><info><userId>south03@mtlasdev55.net</userId><firstName>john3</firstName><lastName>south</lastName><firstNameUnicode>john3</firstNameUnicode><lastNameUnicode>south</lastNameUnicode><timeZone>US/Eastern</timeZone><languageKey>English</languageKey><userType>User</userType><emailAddress xsi:nil="true"></emailAddress><clid xsi:nil="true"></clid><ncosKey xsi:nil="true"></ncosKey><groupKey>763969050</groupKey><departmentKey xsi:nil="true"></departmentKey><title xsi:nil="true"></title><mobileODN xsi:nil="true"></mobileODN><pagerODN xsi:nil="true"></pagerODN></info><identities><dnProperties><entry><type>Main</type><dn>+15146976603</dn><extension>603</extension><ringPattern>Normal</ringPattern></entry></dnProperties><devices><entry><accessDeviceKey>705446593</accessDeviceKey><addressOfRecord>5146976603@mtlasdev55.net</addressOfRecord><type>Main</type><active>true</active><allowOrigination>true</allowOrigination><allowTermination>true</allowTermination><staticLocation xsi:nil="true"></staticLocation><privateIdentity xsi:nil="true"></privateIdentity><allowVideo>true</allowVideo></entry></devices><aliases></aliases></identities><policies><callProcessingPolicy><callLimitPolicy><useOwnPolicy>false</useOwnPolicy><ownPolicy xsi:nil="true"></ownPolicy></callLimitPolicy><mediaPolicy><useOwnPolicy>false</useOwnPolicy><ownPolicy xsi:nil="true"></ownPolicy></mediaPolicy><clidPolicy><useOwnPolicy>false</useOwnPolicy><ownPolicy xsi:nil="true"></ownPolicy></clidPolicy><redirectedCOLPPrivacy>NoPrivacy</redirectedCOLPPrivacy><send181ResponseOnRedirectedCalls>Never</send181ResponseOnRedirectedCalls></callProcessingPolicy><devicePolicy><callDecline>false</callDecline></devicePolicy></policies><sharedServiceData><noAnswerTimer>3</noAnswerTimer><usePersonalizedName>false</usePersonalizedName><voicePortalAutoLogin>false</voicePortalAutoLogin><personalizedNameMediaType xsi:nil="true"></personalizedNameMediaType><lastPasscodeModified>1462989479474</lastPasscodeModified><voicePortalFailNotificationSent>false</voicePortalFailNotificationSent><failedVoicePortalAttempts>0</failedVoicePortalAttempts><voicePortalPasswordNotSet>true</voicePortalPasswordNotSet><voicePortalPassword>0000</voicePortalPassword><capSharedKey xsi:nil="true"></capSharedKey><loginPassword>b0846ffd660576690f30ac56442acb7487d99063</loginPassword><ocicApps xsi:nil="true"></ocicApps><customMediaFilePath>customMediaFiles/7/6396/763969050/131447826</customMediaFilePath><schedules></schedules><communicationBarringAuthorizationCodes></communicationBarringAuthorizationCodes><sustainedAuthorizationCode xsi:nil="true"></sustainedAuthorizationCode></sharedServiceData><services><sub:broadworksAnywhere active="false"><alertAll>false</alertAll><locations></locations></sub:broadworksAnywhere><sub:callForwardingAlways active="false"><destination xsi:nil="true"></destination><ringSplashActive>false</ringSplashActive></sub:callForwardingAlways><sub:callForwardingBusy active="false" xsi:type="sub:CallForwardingType"><destination xsi:nil="true"></destination></sub:callForwardingBusy><sub:callForwardingNoAnswer active="false"><destination xsi:nil="true"></destination></sub:callForwardingNoAnswer><sub:originating-identity-presentation-restriction active="false"><default-behaviour>presentation-not-restricted</default-behaviour></sub:originating-identity-presentation-restriction><sub:callTransfer><recallActive>false</recallActive><recallNoAnswerRings>4</recallNoAnswerRings><blindTransferDiversionInhibited>false</blindTransferDiversionInhibited><consultativeCallDiversionInhibited>false</consultativeCallDiversionInhibited><busyCampOn>false</busyCampOn><campOnTime>120</campOnTime></sub:callTransfer><sub:communication-waiting active="true"></sub:communication-waiting><sub:commpilotCallManager active="true"></sub:commpilotCallManager><sub:customRingbackUser active="false"><rules></rules></sub:customRingbackUser><sub:doNotDisturb active="false"><ringSplashActive>false</ringSplashActive></sub:doNotDisturb><sub:originating-identity-presentation active="true"></sub:originating-identity-presentation><sub:sharedCallAppearance active="false"><alertAll>false</alertAll><allowRetrieve>false</allowRetrieve><allowBridging>false</allowBridging><warningTone>none</warningTone><useUserPrimaryWithAlternateSetting>false</useUserPrimaryWithAlternateSetting><allowSimultaneousPrimaryAndAlternate>false</allowSimultaneousPrimaryAndAlternate><restrictCallRetrieveOfPrimary>false</restrictCallRetrieveOfPrimary><restrictCallBridgingOfPrimary>false</restrictCallBridgingOfPrimary></sub:sharedCallAppearance><sub:speedDial8><codes></codes></sub:speedDial8><sub:speedDial100><codes></codes></sub:speedDial100><sub:terminating-identity-presentation active="true"></sub:terminating-identity-presentation><sub:terminating-identity-presentation-restriction active="false"><default-behaviour>presentation-not-restricted</default-behaviour></sub:terminating-identity-presentation-restriction><sub:voiceMessagingUser active="false"><useDefaultMailServer>true</useDefaultMailServer><useMWI>true</useMWI><sendPrivateEmail>false</sendPrivateEmail><privateEmailAddress xsi:nil="true"></privateEmailAddress><sendNotification>false</sendNotification><notificationEmailAddress xsi:nil="true"></notificationEmailAddress><transferOnZero>false</transferOnZero><transferOnZeroDN xsi:nil="true"></transferOnZeroDN><phoneActive>true</phoneActive><carbonCopy>false</carbonCopy><carbonCopyEmailAddress xsi:nil="true"></carbonCopyEmailAddress><forwardOnBusy>true</forwardOnBusy><forwardOnNoAnswer>true</forwardOnNoAnswer><forwardAlways>false</forwardAlways><vmAliases></vmAliases><defaultMailServer xsi:nil="true"></defaultMailServer><alternateMailServer xsi:nil="true"></alternateMailServer><voiceMessagingGreetings></voiceMessagingGreetings><distributionList xsi:nil="true"></distributionList></sub:voiceMessagingUser><sub:voicePortalCalling active="true"></sub:voicePortalCalling></services></prov><ims><scscfName xsi:nil="true"></scscfName></ims><dynamic><hostingAS>10.9.55.21</hostingAS><authenticationFailed>false</authenticationFailed><dynamicLocations><entry><addressOfRecord>5146976603@mtlasdev55.net</addressOfRecord><contact>sip:10.9.55.11:5061</contact><qValue>500</qValue><expirationTime>2016-05-12T14:31:45.077-04:00</expirationTime><receivedTime>2016-05-11T14:31:45.104-04:00</receivedTime><privateIdentity xsi:nil="true"></privateIdentity></entry></dynamicLocations><voiceMessagingUser><voiceMessagingMailboxFull>false</voiceMessagingMailboxFull><messageSummary xsi:nil="true"></messageSummary><savedMessages xsi:nil="true"></savedMessages></voiceMessagingUser><userSubscriptions></userSubscriptions><endpointSubscriptions></endpointSubscriptions><listSubscriptions></listSubscriptions><xsiChannels></xsiChannels><perDeviceState><entry><addressOfRecord>5146976603@mtlasdev55.net</addressOfRecord><csMediaOnlySupported>false</csMediaOnlySupported><privateIdentity xsi:nil="true"></privateIdentity><instanceId xsi:nil="true"></instanceId><featureParams xsi:nil="true"></featureParams><accessNetworkInfo>IEEE-802.11b;isp=abc;network=4011</accessNetworkInfo></entry></perDeviceState></dynamic></entry>
+
+
+2016.05.11 14:32:33:897 EDT | FieldDebug | Generic
+
+	Received User Profile for xpath: /sub:broadworks/subscriber/users/entry[prov/identities/devices/entry/addressOfRecord='5146976603@mtlasdev55.net']
+
+2016.05.11 14:32:33:898 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Processing Service Event: com.broadsoft.events.callhalf.TranslationResultEvent
+
+2016.05.11 14:32:33:898 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Address = 603 , Call Type = Group
+
+2016.05.11 14:32:33:898 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Event: com.broadsoft.events.callhalf.TranslationResultEvent
+	Consumed by: com.broadsoft.apm.callp.components.TranslationManagerCallImpl
+
+2016.05.11 14:32:33:898 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Processing Event: com.broadsoft.apm.asservicemanagement.ResumeEvent
+
+2016.05.11 14:32:33:898 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Resuming Event: com.broadsoft.events.callhalf.InvitationEvent {CHCallManager.callhalf-19,CHCall.callhalf-19:0}
+	After Service Instance: com.broadsoft.services.translation.TranslationServiceOrigInstance
+
+2016.05.11 14:32:33:898 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	old State: IDLE  new State: ALERTING
+
+2016.05.11 14:32:33:898 EDT | Info       | Sip | +15146976603 | callhalf-20
+
+	$ new CHSS > +15146976603 > callhalf-19:0 > callhalf-20
+
+2016.05.11 14:32:33:899 EDT | FieldDebug | Generic
+
+	Adding User: 5146976603@mtlasdev55.net to local map
+
+2016.05.11 14:32:33:899 EDT | Info       | CallP | Call Manager | +15146976603 | South_as55 | callhalf-20
+
+	Processing Event: com.broadsoft.events.callhalf.TerminationEvent : callhalf-19:0 {CHCall.callhalf-19:0,CHCallManager.callhalf-20}
+
+2016.05.11 14:32:33:899 EDT | Info       | CallP | Call | +15146976603 | South_as55 | callhalf-20:0
+
+	old displayMode: [allowNumber=true allowName=true allowCOLP=true lockStatus=UNLOCKED]  new displayMode: [allowNumber=false allowName=false allowCOLP=false lockStatus=LOCKED]
+
+2016.05.11 14:32:33:899 EDT | Info       | CallP | Call | +15146976603 | South_as55 | callhalf-20:0
+
+	Processing Event: com.broadsoft.events.callhalf.InvitationEvent {CHCall.callhalf-19:0,CHCall.callhalf-20:0}
+
+2016.05.11 14:32:33:899 EDT | Info       | CallP | Call | +15146976603 | South_as55 | callhalf-20:0
+
+	Connection - old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2016.05.11 14:32:33:899 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Processing Event: com.broadsoft.events.callhalf.LinkRemoteCallEvent : callhalf-20:0 {CHCall.callhalf-20:0,CHCall.callhalf-19:0}
+
+2016.05.11 14:32:33:900 EDT | Info       | Accounting
+
+	CALL TERMINATION ACCOUNTING EVENT
+	Time Stamp: Wed May 11 14:32:33 EDT 2016 (1462991553888)
+	Accounting ID: 20:0
+	Local Address: +15146976603@mtlasdev55.net;user=phone
+	Local Group Name: South_as55
+	Remote Address: +15146976608@mtlasdev55.net;user=phone
+	Call Type: Group
+	Service Provider ID: MtlASDev
+	Time Zone: US/Eastern
+	Local Group Address: null
+	Local Department Name: null
+	First Redirecting Number: null
+	First RN Pres. Indicator: PUBLIC
+	First Redirecting Reason: null
+	Last Redirecting Number : null
+	Last RN Pres. Indicator : PUBLIC
+	Last Redirecting Reason: null
+	P-Charging-Vector:icid-value=A5CF34A5DBC0367C;orig-ioi=mtlasdev55.net
+	Output Call Log: false
+	UserId: south03@mtlasdev55.net
+	Can have device: true
+	P-Charging-Function-Addresses: null
+	Related Call Id Name: null
+	Related Call Id Reason: null
+	Primary Device Lineport: 5146976603@mtlasdev55.net
+	Prepaid Event Handler Key: null
+	Virtual On-Net Type: null
+	Office Zone: null
+	Primary Zone: null
+	Roaming MSC Address: null
+	Charge Number: null
+	rfSessionID: xs.client.mtl.broadsoft.com;1462991553899;0|1
+	Calling Party Addresses List: [sip:5146976608@mtlasdev55.net, tel:+15146976608]
+	Request-URI: sip:+15146976603@mtlasdev55.net;user=phone
+	Private Identity: null
+	Route: mtlasdev55.net
+	Network CallID: BW143233597110516-1386164150@10.9.55.21
+	Remote CallID: 19:0
+	Calling Party Name: john8 south
+	Calling Pres. Indicator: PUBLIC
+	Clid Permitted: false
+	Name Permitted: false
+	Routing Number: null
+	Routing Number Context: null
+	Emergency Callback: false
+	P-Access-Network-Info:IEEE-802.11b;isp=abc;network=4011
+
+
+2016.05.11 14:32:33:900 EDT | Info       | CallP | Call | +15146976603 | South_as55 | callhalf-20:0
+
+	old State: IDLE  new State: ALERTING
+
+2016.05.11 14:32:33:900 EDT | Info       | CallP | Call Manager | +15146976603 | South_as55 | callhalf-20
+
+	Processing Event: com.broadsoft.events.callhalf.InvitationEvent {CHCall.callhalf-20:0,CHCallManager.callhalf-20}
+
+2016.05.11 14:32:33:900 EDT | Info       | CallP | SIP Endpoint | +15146976603 | callhalf-20:0
+
+	old State: IDLE  new State: ALERTING
+
+2016.05.11 14:32:33:900 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Connection - old State: IDLE  new State: NEGOTIATING_WAITING_FOR_ANSWER
+
+2016.05.11 14:32:33:901 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Transforming Event: com.broadsoft.events.iwp.ConnectRequestEvent {CHCallManager.callhalf-20,SipEndpoint.callhalf-20:0}
+
+2016.05.11 14:32:33:901 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	call: 1  old State: IDLE  new State: INVITING
+
+2016.05.11 14:32:33:902 EDT | Info       | Sip | +15146976603 | callhalf-20:0
+
+	udp 1082 Bytes OUT to 10.9.55.11:5061
+INVITE sip:+15146976603@mtlasdev55.net;user=phone SIP/2.0
+Via:SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594807-1766290542-1462991553901-
+From:<sip:mtlasdev55.net>;tag=1766290542-1462991553901-
+To:"john3 south"<sip:+15146976603@mtlasdev55.net;user=phone>
+Call-ID:BW143233901110516-795420054@10.9.55.21
+CSeq:277594807 INVITE
+Contact:<sip:10.9.55.21:5060>
+Route:<sip:68B1B5BB6C58E731@10.9.55.11:5061;lr;term>
+P-Charging-Vector:icid-value=A5CF34A5DBC0367C;orig-ioi=mtlasdev55.net
+P-Charging-Function-Addresses:ecf=10.9.55.11
+Supported:100rel,resource-priority
+Allow:ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,UPDATE,NOTIFY
+Accept:multipart/mixed,application/media_control+xml,application/sdp
+Max-Forwards:10
+Content-Type:application/sdp
+Content-Length:273
+
+v=0
+o=BroadWorks 14 1 IN IP4 192.168.22.64
+s=-
+c=IN IP4 192.168.22.64
+t=0 0
+a=sendrecv
+m=audio 2234 RTP/AVP 0 8 18 9 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:18 G729/8000
+a=fmtp:18 annexb=no
+a=rtpmap:9 G722/8000
+a=rtpmap:101 telephone-event/8000
+
+
+2016.05.11 14:32:33:903 EDT | Info       | CallP | Call Manager | +15146976603 | South_as55 | callhalf-20
+
+	Processing Event: com.broadsoft.events.callhalf.AccountingInfoEvent {SipEndpoint.callhalf-20:0,CHCallManager.callhalf-20}
+
+2016.05.11 14:32:33:903 EDT | Info       | CallP | Call | +15146976603 | South_as55 | callhalf-20:0
+
+	Processing Event: com.broadsoft.events.callhalf.AccountingInfoEvent {CHCallManager.callhalf-20,CHCall.callhalf-20:0}
+
+2016.05.11 14:32:33:995 EDT | Info       | Sip | +15146976603 | callhalf-20:0
+
+	udp 352 Bytes IN from 10.9.55.11:5061
+SIP/2.0 100 Trying
+To: "john3 south" <sip:+15146976603@mtlasdev55.net;user=phone>
+Via: SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594807-1766290542-1462991553901-
+CSeq: 277594807 INVITE
+Call-ID: BW143233901110516-795420054@10.9.55.21
+From: <sip:mtlasdev55.net>;tag=1766290542-1462991553901-
+Content-Length: 0
+
+
+
+2016.05.11 14:32:33:995 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Processing Event: com.broadsoft.events.sip.Sip100InfoEvent
+
+2016.05.11 14:32:33:995 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	call: 1  old State: INVITING  new State: INVITING
+
+2016.05.11 14:32:33:995 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Transforming Event: com.broadsoft.events.sip.Sip100InfoEvent
+
+2016.05.11 14:32:33:996 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Transformer Consumed Event: com.broadsoft.events.sip.Sip100InfoEvent
+
+2016.05.11 14:32:34:158 EDT | Info       | Sip | +15146976603 | callhalf-20:0
+
+	udp 642 Bytes IN from 10.9.55.11:5061
+SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594807-1766290542-1462991553901-
+Record-Route: <sip:10.9.55.11:5061;lr>
+From: <sip:mtlasdev55.net>;tag=1766290542-1462991553901-
+To: "john3 south" <sip:+15146976603@mtlasdev55.net;user=phone>;tag=521308686
+Call-ID: BW143233901110516-795420054@10.9.55.21
+CSeq: 277594807 INVITE
+Contact: <sip:5146976603@10.9.55.37>
+Allow: INVITE,INFO,PRACK,ACK,BYE,CANCEL,OPTIONS,NOTIFY,REGISTER,SUBSCRIBE,REFER,PUBLISH,UPDATE,MESSAGE
+User-Agent: Yealink SIP-T22P 7.73.0.50
+Allow-Events: talk,hold,conference,refer,check-sync
+Content-Length: 0
+
+
+
+2016.05.11 14:32:34:158 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Processing Event: com.broadsoft.events.sip.Sip100InfoEvent
+
+2016.05.11 14:32:34:158 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	call: 1  old State: INVITING  new State: INVITING
+
+2016.05.11 14:32:34:159 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Transforming Event: com.broadsoft.events.sip.Sip100InfoEvent
+
+2016.05.11 14:32:34:159 EDT | FieldDebug | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Merging UnknownHeaders:
+	oldProxyUnknownHeaders: null
+	incomingUnknownHeaders: [User-Agent: Yealink SIP-T22P 7.73.0.50]
+	UnknownHeaders: no header to store
+
+2016.05.11 14:32:34:159 EDT | Info       | CallP | Call Manager | +15146976603 | South_as55 | callhalf-20
+
+	Processing Event: com.broadsoft.events.callhalf.AlertingEvent {SipEndpoint.callhalf-20:0,CHCallManager.callhalf-20}
+
+2016.05.11 14:32:34:159 EDT | Info       | CallP | Call | +15146976603 | South_as55 | callhalf-20:0
+
+	Processing Event: com.broadsoft.events.callhalf.AlertingEvent {CHCallManager.callhalf-20,CHCall.callhalf-20:0}
+
+2016.05.11 14:32:34:160 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Processing Event: com.broadsoft.events.callhalf.AlertingEvent {CHCall.callhalf-20:0,CHCall.callhalf-19:0}
+
+2016.05.11 14:32:34:160 EDT | Info       | Accounting
+
+		Time Stamp: Wed May 11 14:32:34 EDT 2016 (1462991554160)
+	Accounting ID: 20:0
+
+
+2016.05.11 14:32:34:160 EDT | Info       | CallP | Call Manager | +15146976608 | PSTN | callhalf-19
+
+	Processing Event: com.broadsoft.events.callhalf.AlertingEvent {CHCall.callhalf-19:0,CHCallManager.callhalf-19}
+
+2016.05.11 14:32:34:160 EDT | Info       | CallP | Service | Ringback | +15146976608 | PSTN | callhalf-19
+
+	Processing in Ringback Service
+
+2016.05.11 14:32:34:161 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	Transforming Event: com.broadsoft.events.callhalf.AlertingEvent {CHCallManager.callhalf-19,SipEndpoint.callhalf-19:0}
+
+2016.05.11 14:32:34:161 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	call: 1  old State: INVITING  new State: INVITING
+
+2016.05.11 14:32:34:161 EDT | FieldDebug | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	Merging UnknownHeaders:
+	oldProxyUnknownHeaders: null
+	incomingUnknownHeaders: [User-Agent: Yealink SIP-T22P 7.73.0.50]
+	UnknownHeaders: no header to store
+
+2016.05.11 14:32:34:161 EDT | Info       | Sip | +15146976608 | callhalf-19:0
+
+	udp 917 Bytes OUT to 10.9.55.11:5061
+SIP/2.0 180 Ringing
+Via:SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK29e9a6ee7a692640d3378cb8480bc38c0ae48e7b,SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK8c09599e8ff5be3488c17e8c716ae079c2f89504,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594655-814538767-1462991553597-
+From:"john8 south"<sip:+15146976608@mtlasdev55.net;user=phone>;tag=814538767-1462991553597-
+To:"john3 south"<sip:+15146976603@mtlasdev55.net;user=phone>;tag=447051573-1462991554161
+Call-ID:BW143233597110516-1386164150@10.9.55.21
+CSeq:277594655 INVITE
+Supported:
+Contact:<sip:10.9.55.21:5060>
+Record-Route:<sip:10.9.55.11:5061;lr>,<sip:10.9.55.11:5061;lr>
+X-BroadWorks-DGC:user-id="south03@mtlasdev55.net";ext-tracking-id="2:1"
+P-Asserted-Identity:"john3 south"<sip:+15146976603@mtlasdev55.net;user=phone>
+Privacy:none
+Allow:ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,UPDATE,NOTIFY
+Content-Length:0
+
+
+
+2016.05.11 14:32:34:197 EDT | Info       | Sip | +15146976603 | callhalf-18:0
+
+	udp 782 Bytes IN from 10.9.55.11:5061
+SIP/2.0 180 Ringing
+Via: SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594655-814538767-1462991553597-
+From: "john8 south" <sip:+15146976608@mtlasdev55.net;user=phone>;tag=814538767-1462991553597-
+To: "john3 south" <sip:+15146976603@mtlasdev55.net;user=phone>;tag=447051573-1462991554161
+Call-ID: BW143233597110516-1386164150@10.9.55.21
+CSeq: 277594655 INVITE
+Supported: 
+Contact: <sip:10.9.55.21:5060>
+Record-Route: <sip:10.9.55.11:5061;lr>
+Record-Route: <sip:10.9.55.11:5061;lr>
+X-BroadWorks-DGC: user-id="south03@mtlasdev55.net";ext-tracking-id="2:1"
+P-Asserted-Identity: "john3 south" <sip:+15146976603@mtlasdev55.net;user=phone>
+Privacy: none
+Allow: ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,UPDATE,NOTIFY
+Content-Length: 0
+
+
+
+2016.05.11 14:32:34:197 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	Processing Event: com.broadsoft.events.sip.Sip100InfoEvent
+
+2016.05.11 14:32:34:197 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	call: 1  old State: INVITING  new State: INVITING
+
+2016.05.11 14:32:34:197 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	Transforming Event: com.broadsoft.events.sip.Sip100InfoEvent
+
+2016.05.11 14:32:34:197 EDT | Info       | CallP | Call Manager | +15146976603 | PSTN | callhalf-18
+
+	Processing Event: com.broadsoft.events.callhalf.PartyInfoEvent {SipEndpoint.callhalf-18:0,CHCallManager.callhalf-18}
+
+2016.05.11 14:32:34:198 EDT | Info       | CallP | Call Manager | +15146976603 | PSTN | callhalf-18
+
+	Processing Event: com.broadsoft.events.callhalf.AlertingEvent {SipEndpoint.callhalf-18:0,CHCallManager.callhalf-18}
+
+2016.05.11 14:32:34:198 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	Processing Event: com.broadsoft.events.callhalf.PartyInfoEvent {CHCallManager.callhalf-18,CHCall.callhalf-18:0}
+
+2016.05.11 14:32:34:198 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	Connected Identity - local info changed
+	DistributedCallData
+
+2016.05.11 14:32:34:198 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	Processing Event: com.broadsoft.events.callhalf.AlertingEvent {CHCallManager.callhalf-18,CHCall.callhalf-18:0}
+
+2016.05.11 14:32:34:198 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Event: com.broadsoft.events.callhalf.PartyInfoEvent {CHCall.callhalf-18:0,CHCall.callhalf-17:0}
+
+2016.05.11 14:32:34:198 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Connected Identity - remote info changed
+	DistributedCallData
+
+2016.05.11 14:32:34:198 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Event: com.broadsoft.events.callhalf.RemotePartyUpdateEvent {CHCall.callhalf-17:0,CHCall.callhalf-17:0}
+
+2016.05.11 14:32:34:198 EDT | Info       | CallP | Call Manager | +15146976608 | South_as55 | callhalf-17
+
+	Processing Event: com.broadsoft.events.callhalf.PartyInfoEvent {CHCall.callhalf-17:0,CHCallManager.callhalf-17}
+
+2016.05.11 14:32:34:198 EDT | Info       | CallP | Call Manager | +15146976608 | South_as55 | callhalf-17
+
+	Processing Event: com.broadsoft.events.callhalf.RemotePartyUpdateEvent {CHCall.callhalf-17:0,CHCallManager.callhalf-17}
+
+2016.05.11 14:32:34:198 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Event: com.broadsoft.events.callhalf.AlertingEvent {CHCall.callhalf-18:0,CHCall.callhalf-17:0}
+
+2016.05.11 14:32:34:199 EDT | Info       | CallP | Call Manager | +15146976608 | South_as55 | callhalf-17
+
+	Processing Event: com.broadsoft.events.callhalf.AlertingEvent {CHCall.callhalf-17:0,CHCallManager.callhalf-17}
+
+2016.05.11 14:32:34:199 EDT | Info       | CallP | Service | Ringback | +15146976608 | South_as55 | callhalf-17
+
+	Processing in Ringback Service
+
+2016.05.11 14:32:34:199 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	Transforming Event: com.broadsoft.events.callhalf.AlertingEvent {CHCallManager.callhalf-17,SipEndpoint.callhalf-17:0}
+
+2016.05.11 14:32:34:200 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	call: 1  old State: INVITING  new State: INVITING
+
+2016.05.11 14:32:34:200 EDT | Info       | Sip | +15146976608 | callhalf-17:0
+
+	udp 543 Bytes OUT to 10.9.55.11:5061
+SIP/2.0 180 Ringing
+Via:SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK3b0cc8bac3f807f244801129a80220f08c3cb88e,SIP/2.0/UDP 192.168.22.64;branch=z9hG4bK46515593B2EAD4C
+From:"Polycom Line 2"<sip:5146976608@mtlasdev55.net>;tag=CF7CBB63-537905B6
+To:<sip:603@mtlasdev55.net;user=phone>;tag=2026890481-1462991554199
+Call-ID:ecd9e08f-6b41222-1d6f505@192.168.22.64
+CSeq:1 INVITE
+Supported:
+Contact:<sip:10.9.55.21:5060>
+Record-Route:<sip:10.9.55.11:5061;lr>
+Allow:ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,UPDATE,NOTIFY
+Content-Length:0
+
+
+
+2016.05.11 14:32:37:139 EDT | Info       | Sip | +15146976603 | callhalf-20:0
+
+	udp 812 Bytes IN from 10.9.55.11:5061
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594807-1766290542-1462991553901-
+Record-Route: <sip:10.9.55.11:5061;lr>
+From: <sip:mtlasdev55.net>;tag=1766290542-1462991553901-
+To: "john3 south" <sip:+15146976603@mtlasdev55.net;user=phone>;tag=521308686
+Call-ID: BW143233901110516-795420054@10.9.55.21
+CSeq: 277594807 INVITE
+Contact: <sip:5146976603@10.9.55.37>
+Content-Type: application/sdp
+Allow: INVITE,INFO,PRACK,ACK,BYE,CANCEL,OPTIONS,NOTIFY,REGISTER,SUBSCRIBE,REFER,PUBLISH,UPDATE,MESSAGE
+User-Agent: Yealink SIP-T22P 7.73.0.50
+Content-Length: 195
+
+v=0
+o=- 20049 20049 IN IP4 10.9.55.37
+s=SDP data
+c=IN IP4 10.9.55.37
+t=0 0
+a=sendrecv
+m=audio 11800 RTP/AVP 0 101
+a=rtpmap:0 PCMU/8000
+a=fmtp:101 0-15
+a=rtpmap:101 telephone-event/8000
+
+
+2016.05.11 14:32:37:140 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Processing Event: com.broadsoft.events.sip.Sip200SuccessEvent
+
+2016.05.11 14:32:37:140 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	call: 1  old State: INVITING  new State: ACCEPTING
+
+2016.05.11 14:32:37:140 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Transforming Event: com.broadsoft.events.sip.Sip200SuccessEvent
+
+2016.05.11 14:32:37:140 EDT | FieldDebug | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Merging UnknownHeaders:
+	oldProxyUnknownHeaders: null
+	incomingUnknownHeaders: [User-Agent: Yealink SIP-T22P 7.73.0.50]
+	UnknownHeaders: no header to store
+
+2016.05.11 14:32:37:140 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ANSWER  new State: NEGOTIATING_WAITING_FOR_ACK
+
+2016.05.11 14:32:37:141 EDT | Info       | CallP | Call Manager | +15146976603 | South_as55 | callhalf-20
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerEvent {SipEndpoint.callhalf-20:0,CHCallManager.callhalf-20}
+
+2016.05.11 14:32:37:141 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	old State: ALERTING  new State: ACTIVE
+
+2016.05.11 14:32:37:141 EDT | Info       | CallP | Call | +15146976603 | South_as55 | callhalf-20:0
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerEvent {CHCallManager.callhalf-20,CHCall.callhalf-20:0}
+
+2016.05.11 14:32:37:141 EDT | Info       | CallP | Call | +15146976603 | South_as55 | callhalf-20:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ANSWER  new State: NEGOTIATING_WAITING_FOR_ACK
+
+2016.05.11 14:32:37:141 EDT | Info       | CallP | Call | +15146976603 | South_as55 | callhalf-20:0
+
+	old State: ALERTING  new State: ACTIVE
+
+2016.05.11 14:32:37:142 EDT | Info       | Accounting
+
+	ANSWER SDP ACCOUNTING EVENT
+	Time Stamp: Wed May 11 14:32:37 EDT 2016 (1462991557141)
+	Accounting ID: 20:0
+	offerSdpTimestamp: 1462991553899
+	answerSdpTimestamp: 1462991557141
+	fromAnswer: yes
+	sdpSource: remote
+	AnswerSDP: present
+	LocalSDP: present (ANSWER)
+
+	Locations: 5146976603@mtlasdev55.net 
+	Location Type: Primary Device 
+	Location Network: Fixed 
+	Private User Identity: null
+	IMRN from Xsi: null
+
+2016.05.11 14:32:37:142 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerEvent {CHCall.callhalf-20:0,CHCall.callhalf-19:0}
+
+2016.05.11 14:32:37:142 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ANSWER  new State: NEGOTIATING_WAITING_FOR_ACK
+
+2016.05.11 14:32:37:142 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	old State: ALERTING  new State: ACTIVE
+
+2016.05.11 14:32:37:142 EDT | Info       | CallP | Call Manager | +15146976608 | PSTN | callhalf-19
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerEvent {CHCall.callhalf-19:0,CHCallManager.callhalf-19}
+
+2016.05.11 14:32:37:142 EDT | Info       | Accounting
+
+	CALL ANSWER ACCOUNTING EVENT
+	Time Stamp: Wed May 11 14:32:37 EDT 2016 (1462991557138)
+	Accounting ID: 20:0
+	Route: unconfirmed
+	Network Translated Address: null
+	Category:  (value not set) 
+	Charge Indicator: n
+	Network CallID: BW143233597110516-1386164150@10.9.55.21
+	Local CallId: BW143233901110516-795420054@10.9.55.21
+	Call Inactive: false
+	Access CallID: BW143233901110516-795420054@10.9.55.21
+	P-Charging-Vector: null
+	P-Charging-Function-Addresses: null
+	P-Access-Network-Info: null
+	Related Call Id Name: null
+	Related Call Id Reason: null
+	Called Asserted Identity: +15146976608@mtlasdev55.net
+	Called Asserted Presentation Indicator: PUBLIC
+	pbxDeflection: false
+	Calling Party Addresses List: [sip:5146976608@mtlasdev55.net, tel:+15146976608]
+	Private Identity: null
+	Received TimeZone: null
+	User Equipment Info: null
+	Charging Group Id: null
+
+
+2016.05.11 14:32:37:142 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	old State: ALERTING  new State: ACTIVE
+
+2016.05.11 14:32:37:142 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ANSWER  new State: NEGOTIATING_WAITING_FOR_ACK
+
+2016.05.11 14:32:37:142 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	Transforming Event: com.broadsoft.events.callhalf.AnswerEvent {CHCallManager.callhalf-19,SipEndpoint.callhalf-19:0}
+
+2016.05.11 14:32:37:143 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	call: 1  old State: INVITING  new State: ACCEPTING
+
+2016.05.11 14:32:37:143 EDT | FieldDebug | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	Merging UnknownHeaders:
+	oldProxyUnknownHeaders: null
+	incomingUnknownHeaders: [User-Agent: Yealink SIP-T22P 7.73.0.50]
+	UnknownHeaders: no header to store
+
+2016.05.11 14:32:37:144 EDT | Info       | Sip | +15146976608 | callhalf-19:0
+
+	udp 1362 Bytes OUT to 10.9.55.11:5061
+SIP/2.0 200 OK
+Via:SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK29e9a6ee7a692640d3378cb8480bc38c0ae48e7b,SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK8c09599e8ff5be3488c17e8c716ae079c2f89504,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594655-814538767-1462991553597-
+From:"john8 south"<sip:+15146976608@mtlasdev55.net;user=phone>;tag=814538767-1462991553597-
+To:"john3 south"<sip:+15146976603@mtlasdev55.net;user=phone>;tag=447051573-1462991554161
+Call-ID:BW143233597110516-1386164150@10.9.55.21
+CSeq:277594655 INVITE
+Supported:
+Contact:<sip:10.9.55.21:5060>
+Record-Route:<sip:10.9.55.11:5061;lr>,<sip:10.9.55.11:5061;lr>
+X-BroadWorks-DGC:user-id="south03@mtlasdev55.net";ext-tracking-id="2:1"
+P-Asserted-Identity:"john3 south"<sip:+15146976603@mtlasdev55.net;user=phone>
+Privacy:none
+P-Charging-Vector:icid-value=A5CF34A5DBC0367C;orig-ioi=mtlasdev55.net
+P-Charging-Function-Addresses:ecf=10.9.55.11
+Allow:ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,UPDATE,NOTIFY
+Accept:multipart/mixed,application/media_control+xml,application/sdp,application/x-broadworks-call-center+xml
+Content-Type:application/sdp
+Content-Length:190
+
+v=0
+o=BroadWorks 17 1 IN IP4 10.9.55.37
+s=-
+c=IN IP4 10.9.55.37
+t=0 0
+a=sendrecv
+m=audio 11800 RTP/AVP 0 101
+a=rtpmap:0 PCMU/8000
+a=fmtp:101 0-15
+a=rtpmap:101 telephone-event/8000
+
+
+2016.05.11 14:32:37:195 EDT | Info       | Sip | +15146976603 | callhalf-18:0
+
+	udp 1112 Bytes IN from 10.9.55.11:5061
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594655-814538767-1462991553597-
+From: "john8 south" <sip:+15146976608@mtlasdev55.net;user=phone>;tag=814538767-1462991553597-
+To: "john3 south" <sip:+15146976603@mtlasdev55.net;user=phone>;tag=447051573-1462991554161
+Call-ID: BW143233597110516-1386164150@10.9.55.21
+CSeq: 277594655 INVITE
+Supported: 
+Contact: <sip:10.9.55.21:5060>
+Record-Route: <sip:10.9.55.11:5061;lr>
+Record-Route: <sip:10.9.55.11:5061;lr>
+X-BroadWorks-DGC: user-id="south03@mtlasdev55.net";ext-tracking-id="2:1"
+P-Asserted-Identity: "john3 south" <sip:+15146976603@mtlasdev55.net;user=phone>
+Privacy: none
+Allow: ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,UPDATE,NOTIFY
+Accept: multipart/mixed,application/media_control+xml,application/sdp,application/x-broadworks-call-center+xml
+Content-Type: application/sdp
+Content-Length: 190
+
+v=0
+o=BroadWorks 17 1 IN IP4 10.9.55.37
+s=-
+c=IN IP4 10.9.55.37
+t=0 0
+a=sendrecv
+m=audio 11800 RTP/AVP 0 101
+a=rtpmap:0 PCMU/8000
+a=fmtp:101 0-15
+a=rtpmap:101 telephone-event/8000
+
+
+2016.05.11 14:32:37:195 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	Processing Event: com.broadsoft.events.sip.Sip200SuccessEvent
+
+2016.05.11 14:32:37:195 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	call: 1  old State: INVITING  new State: ACCEPTING
+
+2016.05.11 14:32:37:195 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	Transforming Event: com.broadsoft.events.sip.Sip200SuccessEvent
+
+2016.05.11 14:32:37:196 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ANSWER  new State: NEGOTIATING_WAITING_FOR_ACK
+
+2016.05.11 14:32:37:196 EDT | Info       | CallP | Call Manager | +15146976603 | PSTN | callhalf-18
+
+	Processing Event: com.broadsoft.events.callhalf.PartyInfoEvent {SipEndpoint.callhalf-18:0,CHCallManager.callhalf-18}
+
+2016.05.11 14:32:37:196 EDT | Info       | CallP | Call Manager | +15146976603 | PSTN | callhalf-18
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerEvent {SipEndpoint.callhalf-18:0,CHCallManager.callhalf-18}
+
+2016.05.11 14:32:37:196 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	old State: ALERTING  new State: ACTIVE
+
+2016.05.11 14:32:37:196 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	Processing Event: com.broadsoft.events.callhalf.PartyInfoEvent {CHCallManager.callhalf-18,CHCall.callhalf-18:0}
+
+2016.05.11 14:32:37:196 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerEvent {CHCallManager.callhalf-18,CHCall.callhalf-18:0}
+
+2016.05.11 14:32:37:196 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ANSWER  new State: NEGOTIATING_WAITING_FOR_ACK
+
+2016.05.11 14:32:37:196 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	old State: ALERTING  new State: ACTIVE
+
+2016.05.11 14:32:37:196 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerEvent {CHCall.callhalf-18:0,CHCall.callhalf-17:0}
+
+2016.05.11 14:32:37:196 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ANSWER  new State: NEGOTIATING_WAITING_FOR_ACK
+
+2016.05.11 14:32:37:196 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	old State: ALERTING  new State: ACTIVE
+
+2016.05.11 14:32:37:196 EDT | Info       | Accounting
+
+	ANSWER SDP ACCOUNTING EVENT
+	Time Stamp: Wed May 11 14:32:37 EDT 2016 (1462991557196)
+	Accounting ID: 17:0
+	offerSdpTimestamp: 1462991553554
+	answerSdpTimestamp: 1462991557196
+	fromAnswer: yes
+	sdpSource: local
+	AnswerSDP: present
+	LocalSDP: present (OFFER)
+
+	Locations: 5146976608@mtlasdev55.net 
+	Location Type: Primary Device 
+	Location Network: Fixed 
+	Private User Identity: null
+	IMRN from Xsi: null
+
+2016.05.11 14:32:37:197 EDT | FieldDebug | Accounting
+
+	Stopping GrantedUnitsThresholdTimer id=7
+
+2016.05.11 14:32:37:198 EDT | FieldDebug | Accounting
+
+	Sending CCR[Update] with callId=17:0, ssk=localHost8
+
+2016.05.11 14:32:37:199 EDT | Info       | CallP | Call Manager | +15146976608 | South_as55 | callhalf-17
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerEvent {CHCall.callhalf-17:0,CHCallManager.callhalf-17}
+
+2016.05.11 14:32:37:199 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	old State: ALERTING  new State: ACTIVE
+
+2016.05.11 14:32:37:199 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ANSWER  new State: NEGOTIATING_WAITING_FOR_ACK
+
+2016.05.11 14:32:37:199 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	Transforming Event: com.broadsoft.events.callhalf.AnswerEvent {CHCallManager.callhalf-17,SipEndpoint.callhalf-17:0}
+
+2016.05.11 14:32:37:199 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	call: 1  old State: INVITING  new State: ACCEPTING
+
+2016.05.11 14:32:37:201 EDT | Info       | Sip | +15146976608 | callhalf-17:0
+
+	udp 964 Bytes OUT to 10.9.55.11:5061
+SIP/2.0 200 OK
+Via:SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK3b0cc8bac3f807f244801129a80220f08c3cb88e,SIP/2.0/UDP 192.168.22.64;branch=z9hG4bK46515593B2EAD4C
+From:"Polycom Line 2"<sip:5146976608@mtlasdev55.net>;tag=CF7CBB63-537905B6
+To:<sip:603@mtlasdev55.net;user=phone>;tag=2026890481-1462991554199
+Call-ID:ecd9e08f-6b41222-1d6f505@192.168.22.64
+CSeq:1 INVITE
+Supported:
+Contact:<sip:10.9.55.21:5060>
+Record-Route:<sip:10.9.55.11:5061;lr>
+P-Charging-Vector:icid-value=A5CF34A5DBC0367C;orig-ioi=mtlasdev55.net
+P-Charging-Function-Addresses:ecf=rf.server.mtl.broadsoft.com
+Allow:ACK,BYE,CANCEL,INFO,INVITE,OPTIONS,PRACK,REFER,UPDATE,NOTIFY
+Accept:multipart/mixed,application/media_control+xml,application/sdp
+Content-Type:application/sdp
+Content-Length:190
+
+v=0
+o=BroadWorks 17 1 IN IP4 10.9.55.37
+s=-
+c=IN IP4 10.9.55.37
+t=0 0
+a=sendrecv
+m=audio 11800 RTP/AVP 0 101
+a=rtpmap:0 PCMU/8000
+a=fmtp:101 0-15
+a=rtpmap:101 telephone-event/8000
+
+
+2016.05.11 14:32:37:207 EDT | FieldDebug | Diameter | Base | Node "xs" | Connection "rf.server.mtl.broadsoft.com", id=1 | Transport
+
+	tcp 2352 Bytes OUT to 10.9.55.11:55971
+Message header:
+	flags=RP
+	commandCode=272 (CCR)
+	applicationId=4
+	hopByHopId=671325897
+	endToEndId=1973420048
+AVPs:
+	Session-Id: code=263, flags=M, UTF8String, value=xs.client.mtl.broadsoft.com;1462991553566;0|1
+	Origin-Host: code=264, flags=M, DiameterIdentity, value=xs.client.mtl.broadsoft.com
+	Origin-Realm: code=296, flags=M, DiameterIdentity, value=TestRealm
+	Destination-Realm: code=283, flags=M, DiameterIdentity, value=TestRealm
+	Destination-Host: code=293, flags=M, DiameterIdentity, value=rf.server.mtl.broadsoft.com
+	CC-Request-Type: code=416, flags=M, Enumerated, value=UPDATE_REQUEST
+	CC-Request-Number: code=415, flags=M, Unsigned32, value=1 Description: Unknown
+	Auth-Application-Id: code=258, flags=M, Unsigned32, value=4 Description: Unknown
+	Origin-State-Id: code=278, flags=M, Unsigned32, value=1462990682 Description: Unknown
+	User-Name: code=1, flags=M, UTF8String, value=5146976608@mtlasdev55.net
+	Event-Timestamp: code=55, flags=M, Time, value=Wed May 11 14:32:37 EDT 2016
+	Service-Context-Id: code=461, flags=M, UTF8String, value=8.32260@3gpp.org
+	Subscription-Id: code=443, flags=M, Grouped, value=
+	  Subscription-Id-Type: code=450, flags=M, Integer32, value=2
+	  Subscription-Id-Data: code=444, flags=M, UTF8String, value=sip:5146976608@mtlasdev55.net
+	Multiple-Services-Credit-Control: code=456, flags=M, Grouped, value=
+	  Used-Service-Unit: code=446, flags=M, Grouped, value=
+	    CC-Time: code=420, flags=M, Unsigned32, value=3 Description: Unknown
+	  Reporting-Reason: code=872, vendorId=10415, flags=VM, Enumerated, value=RATING_CONDITION_CHANGE
+	  Trigger: code=1264, vendorId=10415, flags=VM, Grouped, value=
+	    Trigger-Type: code=870, vendorId=10415, flags=VM, Enumerated, value=CHANGE_IN_MEDIA_COMPOSITION
+	Service-Information: code=873, vendorId=10415, flags=VM, Grouped, value=
+	  PS-Information: code=874, vendorId=10415, flags=VM, Grouped, value=
+	    3GPP-MS-TimeZone: code=23, vendorId=10415, flags=VM, OctetString, value=6901 (printable chars): "i\u0001"
+	  IMS-Information: code=876, vendorId=10415, flags=VM, Grouped, value=
+	    Event-Type: code=823, vendorId=10415, flags=VM, Grouped, value=
+	      Sip-Method: code=824, vendorId=10415, flags=VM, UTF8String, value=INVITE
+	    Node-Functionality: code=862, vendorId=10415, flags=VM, Enumerated, value=AS
+	    Role-of-Node: code=829, vendorId=10415, flags=VM, Enumerated, value=ORIGINATING-ROLE
+	    User-Session-Id: code=830, vendorId=10415, flags=VM, UTF8String, value=ecd9e08f-6b41222-1d6f505@192.168.22.64
+	    Outgoing-Session-Id: code=2320, vendorId=10415, flags=VM, UTF8String, value=BW143233597110516-1386164150@10.9.55.21
+	    Calling-Party-Address: code=831, vendorId=10415, flags=VM, UTF8String, value=tel:+15146976608
+	    Called-Party-Address: code=832, vendorId=10415, flags=VM, UTF8String, value=tel:+15146976603
+	    Called-Asserted-Identity: code=1250, vendorId=10415, flags=VM, UTF8String, value=sip:+15146976603@mtlasdev55.net
+	    Requested-Party-Address: code=1251, vendorId=10415, flags=VM, UTF8String, value=sip:603@mtlasdev55.net;user=phone
+	    Time-Stamps: code=833, vendorId=10415, flags=VM, Grouped, value=
+	      SIP-Request-Timestamp: code=834, vendorId=10415, flags=VM, Time, value=Wed May 11 14:32:33 EDT 2016
+	      SIP-Response-Timestamp: code=835, vendorId=10415, flags=VM, Time, value=Wed May 11 14:32:37 EDT 2016
+	      SIP-Request-Timestamp-Fraction: code=2301, vendorId=10415, flags=VM, Unsigned32, value=542 Description: Unknown
+	      SIP-Response-Timestamp-Fraction: code=2302, vendorId=10415, flags=VM, Unsigned32, value=195 Description: Unknown
+	    Inter-Operator-Identifier: code=838, vendorId=10415, flags=VM, Grouped, value=
+	      Originating-IOI: code=839, vendorId=10415, flags=VM, UTF8String, value=mtlasdev55.net
+	    IMS-Charging-Identifier: code=841, vendorId=10415, flags=VM, UTF8String, value=A5CF34A5DBC0367C
+	    SDP-Session-Description: code=842, vendorId=10415, flags=VM, UTF8String, value=v=0
+	    SDP-Session-Description: code=842, vendorId=10415, flags=VM, UTF8String, value=o=BroadWorks 17 1 IN IP4 10.9.55.37
+	    SDP-Session-Description: code=842, vendorId=10415, flags=VM, UTF8String, value=s=-
+	    SDP-Session-Description: code=842, vendorId=10415, flags=VM, UTF8String, value=c=IN IP4 10.9.55.37
+	    SDP-Session-Description: code=842, vendorId=10415, flags=VM, UTF8String, value=a=sendrecv
+	    SDP-Session-Description: code=842, vendorId=10415, flags=VM, UTF8String, value=t=0 0
+	    SDP-Media-Component: code=843, vendorId=10415, flags=VM, Grouped, value=
+	      SDP-Media-Name: code=844, vendorId=10415, flags=VM, UTF8String, value=m=audio 11800 RTP/AVP 0 101
+	      SDP-Media-Description: code=845, vendorId=10415, flags=VM, UTF8String, value=a=rtpmap:0 PCMU/8000
+	      SDP-Media-Description: code=845, vendorId=10415, flags=VM, UTF8String, value=a=fmtp:101 0-15
+	      SDP-Media-Description: code=845, vendorId=10415, flags=VM, UTF8String, value=a=rtpmap:101 telephone-event/8000
+	      Media-Initiator-Flag: code=882, vendorId=10415, flags=VM, Enumerated, value=calling party
+	      SDP-Type: code=2036, vendorId=10415, flags=VM, Enumerated, value=SDP Answer
+	    Access-Network-Information: code=1263, vendorId=10415, flags=VM, UTF8String, value=IEEE-802.11b;isp=abc;network=4011
+	BWAS-Radius-Encoding-Version: code=0, vendorId=6431, flags=V, UTF8String, value=20.0
+	BWAS-Record-id: code=1, vendorId=6431, flags=V, UTF8String, value=0000000002080027B92F8020160511183233.5421-040000
+	BWAS-Service-provider: code=2, vendorId=6431, flags=V, UTF8String, value=MtlASDev
+	BWAS-Type: code=3, vendorId=6431, flags=V, UTF8String, value=Normal
+	BWAS-User-Number: code=4, vendorId=6431, flags=V, UTF8String, value=+15146976608
+	BWAS-Direction: code=6, vendorId=6431, flags=V, UTF8String, value=Originating
+	BWAS-Calling-Number: code=7, vendorId=6431, flags=V, UTF8String, value=+15146976608
+	BWAS-Calling-Presentation-Indic: code=8, vendorId=6431, flags=V, UTF8String, value=Public
+	BWAS-Called-Number: code=9, vendorId=6431, flags=V, UTF8String, value=+15146976603
+	BWAS-Start-Time: code=10, vendorId=6431, flags=V, UTF8String, value=20160511183233.542
+	BWAS-User-Timezone: code=11, vendorId=6431, flags=V, UTF8String, value=1-040000
+	BWAS-Answer-Indic: code=12, vendorId=6431, flags=V, UTF8String, value=Yes
+	BWAS-Answer-Time: code=13, vendorId=6431, flags=V, UTF8String, value=20160511183237.195
+	BWAS-Network-Type: code=16, vendorId=6431, flags=V, UTF8String, value=VoIP
+	BWAS-Dialed-Digits: code=18, vendorId=6431, flags=V, UTF8String, value=603
+	BWAS-Call-Category: code=19, vendorId=6431, flags=V, UTF8String, value=private
+	BWAS-Route: code=24, vendorId=6431, flags=V, UTF8String, value=mtlasdev55.net
+	BWAS-Network-Callid: code=25, vendorId=6431, flags=V, UTF8String, value=BW143233597110516-1386164150@10.9.55.21
+	BWAS-Access-Device-Address: code=27, vendorId=6431, flags=V, UTF8String, value=192.168.22.64
+	BWAS-Access-Callid: code=28, vendorId=6431, flags=V, UTF8String, value=ecd9e08f-6b41222-1d6f505@192.168.22.64
+	BWAS-Group: code=32, vendorId=6431, flags=V, UTF8String, value=South_as55
+	BWAS-Charge-Indic: code=42, vendorId=6431, flags=V, UTF8String, value=n
+	BWAS-Local-Callid: code=45, vendorId=6431, flags=V, UTF8String, value=17:0
+	BWAS-Charging-Vector-Key: code=59, vendorId=6431, flags=V, UTF8String, value=A5CF34A5DBC0367C
+	BWAS-Charging-Vector-Orig: code=61, vendorId=6431, flags=V, UTF8String, value=mtlasdev55.net
+	BWAS-UserId: code=121, vendorId=6431, flags=V, UTF8String, value=south08@mtlasdev55.net
+	BWAS-Other-Party-Name: code=122, vendorId=6431, flags=V, UTF8String, value=john3 south
+	BWAS-Other-Party-Name-Pres-Indic: code=123, vendorId=6431, flags=V, UTF8String, value=Public
+	BWAS-Access-Network-Info: code=144, vendorId=6431, flags=V, UTF8String, value=IEEE-802.11b;isp=abc;network=4011
+	BWAS-Charging-Function-Addresses: code=145, vendorId=6431, flags=V, UTF8String, value=ecf=rf.server.mtl.broadsoft.com
+	BWAS-AS-Call-Type: code=231, vendorId=6431, flags=V, UTF8String, value=Group
+	BWAS-Prepaid-Status: code=246, vendorId=6431, flags=V, UTF8String, value=charged
+	BWAS-Location: code=312, vendorId=6431, flags=V, UTF8String, value=5146976608@mtlasdev55.net
+	BWAS-Location-Type: code=313, vendorId=6431, flags=V, UTF8String, value=Primary Device
+	BWAS-Location-Network: code=428, vendorId=6431, flags=V, UTF8String, value=Fixed
+	BWAS-Access-Network-Info-From-Register: code=430, vendorId=6431, flags=V, UTF8String, value=IEEE-802.11b;isp=abc;network=4011
+
+
+2016.05.11 14:32:37:208 EDT | FieldDebug | Diameter | Base | Node "xs" | Connection "rf.server.mtl.broadsoft.com", id=1 | Transport
+
+	tcp 288 Bytes IN from 10.9.55.11:55971
+Message header:
+	flags=P
+	commandCode=272 (CCA)
+	applicationId=4
+	hopByHopId=671325897
+	endToEndId=1973420048
+AVPs:
+	Session-Id: code=263, flags=M, UTF8String, value=xs.client.mtl.broadsoft.com;1462991553566;0|1
+	Origin-Host: code=264, flags=M, DiameterIdentity, value=rf.server.mtl.broadsoft.com
+	Origin-Realm: code=296, flags=M, DiameterIdentity, value=TestRealm
+	Auth-Application-Id: code=258, flags=M, Unsigned32, value=4 Description: Unknown
+	CC-Request-Type: code=416, flags=M, Enumerated, value=UPDATE_REQUEST
+	CC-Request-Number: code=415, flags=M, Unsigned32, value=1 Description: Unknown
+	Result-Code: code=268, flags=M, Unsigned32, value=2001 Description: Diameter Success
+	Validity-Time: code=448, flags=M, Unsigned32, value=1000 Description: Unknown
+	Credit-Control-Failure-Handling: code=427, flags=M, Enumerated, value=CONTINUE
+	CC-Session-Failover: code=418, flags=M, Enumerated, value=FAILOVER_NOT_SUPPORTED
+	Multiple-Services-Credit-Control: code=456, flags=M, Grouped, value=
+	  Granted-Service-Unit: code=431, flags=M, Grouped, value=
+	    CC-Time: code=420, flags=M, Unsigned32, value=30 Description: Unknown
+	  Time-Quota-Threshold: code=868, vendorId=10415, flags=VM, Unsigned32, value=15 Description: Unknown
+	  Trigger: code=1264, vendorId=10415, flags=VM, Grouped, value=
+	    Trigger-Type: code=870, vendorId=10415, flags=VM, Enumerated, value=CHANGE_IN_MEDIA_COMPOSITION
+
+
+2016.05.11 14:32:37:209 EDT | Info       | Accounting
+
+	CALL ANSWER ACCOUNTING EVENT
+	Time Stamp: Wed May 11 14:32:37 EDT 2016 (1462991557195)
+	Accounting ID: 17:0
+	Route: mtlasdev55.net
+	Network Translated Address: null
+	Category: PRIVATE
+	Charge Indicator: n
+	Network CallID: BW143233597110516-1386164150@10.9.55.21
+	Local CallId: ecd9e08f-6b41222-1d6f505@192.168.22.64
+	Call Inactive: false
+	Access CallID: ecd9e08f-6b41222-1d6f505@192.168.22.64
+	P-Charging-Vector: null
+	P-Charging-Function-Addresses:ecf=rf.server.mtl.broadsoft.com
+	P-Access-Network-Info: null
+	Related Call Id Name: null
+	Related Call Id Reason: null
+	Called Asserted Identity: +15146976603@mtlasdev55.net
+	Called Asserted Presentation Indicator: PUBLIC
+	pbxDeflection: false
+	Calling Party Addresses List: [sip:5146976608@mtlasdev55.net]
+	Private Identity: null
+	Received TimeZone: null
+	User Equipment Info: null
+	Charging Group Id: null
+
+
+2016.05.11 14:32:37:209 EDT | FieldDebug | Accounting
+
+	com.broadsoft.events.accounting.AccountingCcaReceivedEvent
+
+2016.05.11 14:32:37:210 EDT | FieldDebug | Accounting
+
+	CCA[Update], callId=17:0, ssk=localHost8
+
+2016.05.11 14:32:37:210 EDT | Info       | Accounting
+
+	Decoded RoCCAResponse with Result-Code 2001:
+validityTime: 1000, grantedTime: 30, timeQuotaThreshold: 15
+CCFH: CONTINUE
+Trigger mediaComposition: true
+Trigger accessNetworksChange: false
+Announcement-Instructions not present
+
+
+2016.05.11 14:32:37:497 EDT | Info       | Sip | +15146976608 | callhalf-17:0
+
+	udp 639 Bytes IN from 10.9.55.11:5061
+ACK sip:10.9.55.21:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK322eb3927d06d79b8b0b26ab118d62efd8ef087d
+Via: SIP/2.0/UDP 192.168.22.64;branch=z9hG4bK50fb8c389B9D2ABB
+From: "Polycom Line 2" <sip:5146976608@mtlasdev55.net>;tag=CF7CBB63-537905B6
+To: <sip:603@mtlasdev55.net;user=phone>;tag=2026890481-1462991554199
+CSeq: 1 ACK
+Call-ID: ecd9e08f-6b41222-1d6f505@192.168.22.64
+Contact: <sip:5146976608@192.168.22.64>
+Allow: INVITE,ACK,BYE,CANCEL,OPTIONS,INFO,MESSAGE,SUBSCRIBE,NOTIFY,PRACK,UPDATE,REFER
+User-Agent: PolycomSoundPointIP-SPIP_550-UA/4.0.3.7562
+Accept-Language: en
+Max-Forwards: 69
+Content-Length: 0
+
+
+
+2016.05.11 14:32:37:497 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Event: com.broadsoft.events.sip.SipAckEvent
+
+2016.05.11 14:32:37:497 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	call: 1  old State: ACCEPTING  new State: ACTIVE
+
+2016.05.11 14:32:37:497 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	Transforming Event: com.broadsoft.events.sip.SipAckEvent
+
+2016.05.11 14:32:37:497 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ACK  new State: CONNECTED
+
+2016.05.11 14:32:37:497 EDT | Info       | CallP | Call Manager | +15146976608 | South_as55 | callhalf-17
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerAckEvent {SipEndpoint.callhalf-17:0,CHCallManager.callhalf-17}
+
+2016.05.11 14:32:37:497 EDT | Info       | CallP | Call Manager | +15146976608 | South_as55 | callhalf-17
+
+	Processing Event: com.broadsoft.apm.connectionmanagement.ConnectionNotificationEvent {SipEndpoint.callhalf-17:0,CHCallManager.callhalf-17}
+
+2016.05.11 14:32:37:497 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerAckEvent {CHCallManager.callhalf-17,CHCall.callhalf-17:0}
+
+2016.05.11 14:32:37:497 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ACK  new State: CONNECTED
+
+2016.05.11 14:32:37:497 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Event: com.broadsoft.apm.connectionmanagement.ConnectionNotificationEvent
+
+2016.05.11 14:32:37:498 EDT | Info       | CallP | Call Manager | +15146976608 | South_as55 | callhalf-17
+
+	Processing Event: com.broadsoft.apm.connectionmanagement.ConnectionNotificationEvent {CHCall.callhalf-17:0,CHCallManager.callhalf-17}
+
+2016.05.11 14:32:37:498 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerAckEvent {CHCall.callhalf-17:0,CHCall.callhalf-18:0}
+
+2016.05.11 14:32:37:498 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ACK  new State: CONNECTED
+
+2016.05.11 14:32:37:498 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	Processing Event: com.broadsoft.apm.connectionmanagement.ConnectionNotificationEvent
+
+2016.05.11 14:32:37:498 EDT | Info       | CallP | Call Manager | +15146976603 | PSTN | callhalf-18
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerAckEvent {CHCall.callhalf-18:0,CHCallManager.callhalf-18}
+
+2016.05.11 14:32:37:498 EDT | Info       | CallP | Call Manager | +15146976603 | PSTN | callhalf-18
+
+	Processing Event: com.broadsoft.apm.connectionmanagement.ConnectionNotificationEvent {CHCall.callhalf-18:0,CHCallManager.callhalf-18}
+
+2016.05.11 14:32:37:498 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ACK  new State: CONNECTED
+
+2016.05.11 14:32:37:498 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	Transforming Event: com.broadsoft.events.callhalf.AnswerAckEvent {CHCallManager.callhalf-18,SipEndpoint.callhalf-18:0}
+
+2016.05.11 14:32:37:498 EDT | Info       | Accounting
+
+	ANSWER SDP ACCOUNTING EVENT
+	Time Stamp: Wed May 11 14:32:37 EDT 2016 (1462991557497)
+	Accounting ID: 17:0
+	offerSdpTimestamp: 1462991553554
+	answerSdpTimestamp: 1462991557196
+	fromAnswer: no
+	sdpSource: local
+	AnswerSDP: present
+	LocalSDP: present (OFFER)
+
+	Locations: 5146976608@mtlasdev55.net 
+	Location Type: Primary Device 
+	Location Network: Fixed 
+	Private User Identity: null
+	IMRN from Xsi: null
+
+2016.05.11 14:32:37:498 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	call: 1  old State: ACCEPTING  new State: ACTIVE
+
+2016.05.11 14:32:37:498 EDT | Info       | CallP | Call Manager | +15146976603 | PSTN | callhalf-18
+
+	Processing Event: com.broadsoft.apm.connectionmanagement.ConnectionNotificationEvent {SipEndpoint.callhalf-18:0,CHCallManager.callhalf-18}
+
+2016.05.11 14:32:37:498 EDT | Info       | Sip | +15146976603 | callhalf-18:0
+
+	udp 524 Bytes OUT to 10.9.55.11:5061
+ACK sip:10.9.55.21:5060 SIP/2.0
+Via:SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594655A814538767-1462991553597-
+From:"john8 south"<sip:+15146976608@mtlasdev55.net;user=phone>;tag=814538767-1462991553597-
+To:"john3 south"<sip:+15146976603@mtlasdev55.net;user=phone>;tag=447051573-1462991554161
+Call-ID:BW143233597110516-1386164150@10.9.55.21
+CSeq:277594655 ACK
+Route:<sip:10.9.55.11:5061;lr>,<sip:10.9.55.11:5061;lr>
+Contact:<sip:10.9.55.21:5060>
+Max-Forwards:10
+Content-Length:0
+
+
+
+2016.05.11 14:32:37:584 EDT | Info       | Sip | +15146976608 | callhalf-19:0
+
+	udp 654 Bytes IN from 10.9.55.11:5061
+ACK sip:10.9.55.21:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK4672d8df78d80c5b42f5391d1850c9c049fd3cad
+Via: SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK893e9b180fccacea97deab5e5803f860ce40f633
+Via: SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594655A814538767-1462991553597-
+From: "john8 south" <sip:+15146976608@mtlasdev55.net;user=phone>;tag=814538767-1462991553597-
+To: "john3 south" <sip:+15146976603@mtlasdev55.net;user=phone>;tag=447051573-1462991554161
+Call-ID: BW143233597110516-1386164150@10.9.55.21
+CSeq: 277594655 ACK
+Contact: <sip:10.9.55.21:5060>
+Max-Forwards: 8
+Content-Length: 0
+
+
+
+2016.05.11 14:32:37:585 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	Processing Event: com.broadsoft.events.sip.SipAckEvent
+
+2016.05.11 14:32:37:585 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	call: 1  old State: ACCEPTING  new State: ACTIVE
+
+2016.05.11 14:32:37:585 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	Transforming Event: com.broadsoft.events.sip.SipAckEvent
+
+2016.05.11 14:32:37:585 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ACK  new State: CONNECTED
+
+2016.05.11 14:32:37:585 EDT | Info       | CallP | Call Manager | +15146976608 | PSTN | callhalf-19
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerAckEvent {SipEndpoint.callhalf-19:0,CHCallManager.callhalf-19}
+
+2016.05.11 14:32:37:585 EDT | Info       | CallP | Call Manager | +15146976608 | PSTN | callhalf-19
+
+	Processing Event: com.broadsoft.apm.connectionmanagement.ConnectionNotificationEvent {SipEndpoint.callhalf-19:0,CHCallManager.callhalf-19}
+
+2016.05.11 14:32:37:585 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerAckEvent {CHCallManager.callhalf-19,CHCall.callhalf-19:0}
+
+2016.05.11 14:32:37:585 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ACK  new State: CONNECTED
+
+2016.05.11 14:32:37:585 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Processing Event: com.broadsoft.apm.connectionmanagement.ConnectionNotificationEvent
+
+2016.05.11 14:32:37:585 EDT | Info       | CallP | Call Manager | +15146976608 | PSTN | callhalf-19
+
+	Processing Event: com.broadsoft.apm.connectionmanagement.ConnectionNotificationEvent {CHCall.callhalf-19:0,CHCallManager.callhalf-19}
+
+2016.05.11 14:32:37:585 EDT | Info       | CallP | Call | +15146976603 | South_as55 | callhalf-20:0
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerAckEvent {CHCall.callhalf-19:0,CHCall.callhalf-20:0}
+
+2016.05.11 14:32:37:585 EDT | Info       | CallP | Call | +15146976603 | South_as55 | callhalf-20:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ACK  new State: CONNECTED
+
+2016.05.11 14:32:37:585 EDT | Info       | CallP | Call | +15146976603 | South_as55 | callhalf-20:0
+
+	Processing Event: com.broadsoft.apm.connectionmanagement.ConnectionNotificationEvent
+
+2016.05.11 14:32:37:586 EDT | Info       | CallP | Call Manager | +15146976603 | South_as55 | callhalf-20
+
+	Processing Event: com.broadsoft.events.callhalf.AnswerAckEvent {CHCall.callhalf-20:0,CHCallManager.callhalf-20}
+
+2016.05.11 14:32:37:586 EDT | Info       | CallP | Call Manager | +15146976603 | South_as55 | callhalf-20
+
+	Processing Event: com.broadsoft.apm.connectionmanagement.ConnectionNotificationEvent {CHCall.callhalf-20:0,CHCallManager.callhalf-20}
+
+2016.05.11 14:32:37:586 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Connection - old State: NEGOTIATING_WAITING_FOR_ACK  new State: CONNECTED
+
+2016.05.11 14:32:37:586 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Transforming Event: com.broadsoft.events.callhalf.AnswerAckEvent {CHCallManager.callhalf-20,SipEndpoint.callhalf-20:0}
+
+2016.05.11 14:32:37:586 EDT | Info       | Accounting
+
+	ANSWER SDP ACCOUNTING EVENT
+	Time Stamp: Wed May 11 14:32:37 EDT 2016 (1462991557585)
+	Accounting ID: 20:0
+	offerSdpTimestamp: 1462991553899
+	answerSdpTimestamp: 1462991557141
+	fromAnswer: no
+	sdpSource: remote
+	AnswerSDP: present
+	LocalSDP: present (ANSWER)
+
+	Locations: 5146976603@mtlasdev55.net 
+	Location Type: Primary Device 
+	Location Network: Fixed 
+	Private User Identity: null
+	IMRN from Xsi: null
+
+2016.05.11 14:32:37:586 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	call: 1  old State: ACCEPTING  new State: ACTIVE
+
+2016.05.11 14:32:37:586 EDT | Info       | CallP | Call Manager | +15146976603 | South_as55 | callhalf-20
+
+	Processing Event: com.broadsoft.apm.connectionmanagement.ConnectionNotificationEvent {SipEndpoint.callhalf-20:0,CHCallManager.callhalf-20}
+
+2016.05.11 14:32:37:586 EDT | Info       | Sip | +15146976603 | callhalf-20:0
+
+	udp 455 Bytes OUT to 10.9.55.11:5061
+ACK sip:5146976603@10.9.55.37 SIP/2.0
+Via:SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594807A1766290542-1462991553901-
+From:<sip:mtlasdev55.net>;tag=1766290542-1462991553901-
+To:"john3 south"<sip:+15146976603@mtlasdev55.net;user=phone>;tag=521308686
+Call-ID:BW143233901110516-795420054@10.9.55.21
+CSeq:277594807 ACK
+Route:<sip:10.9.55.11:5061;lr>
+Contact:<sip:10.9.55.21:5060>
+Max-Forwards:10
+Content-Length:0
+
+
+
+2016.05.11 14:32:40:792 EDT | Info       | Sip | +15146976603 | callhalf-20:0
+
+	udp 503 Bytes IN from 10.9.55.11:5061
+BYE sip:10.9.55.21:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK6843b2fec20931229cffa273644ec7f676b830f4
+Via: SIP/2.0/UDP 10.9.55.37:5060;branch=z9hG4bK220806066
+From: "john3 south" <sip:+15146976603@mtlasdev55.net;user=phone>;tag=521308686
+To: <sip:mtlasdev55.net>;tag=1766290542-1462991553901-
+Call-ID: BW143233901110516-795420054@10.9.55.21
+CSeq: 277594808 BYE
+Contact: <sip:5146976603@10.9.55.37>
+Max-Forwards: 69
+User-Agent: Yealink SIP-T22P 7.73.0.50
+Content-Length: 0
+
+
+
+2016.05.11 14:32:40:792 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Processing Event: com.broadsoft.events.sip.SipByeEvent
+
+2016.05.11 14:32:40:793 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	call: 1  old State: ACTIVE  new State: RELEASED
+
+2016.05.11 14:32:40:793 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Transforming Event: com.broadsoft.events.sip.SipByeEvent
+
+2016.05.11 14:32:40:793 EDT | Info       | CallP | Call Manager | +15146976603 | South_as55 | callhalf-20
+
+	Processing Event: com.broadsoft.events.iwp.EndpointReleaseEvent {SipEndpoint.callhalf-20:0,CHCallManager.callhalf-20}
+
+2016.05.11 14:32:40:793 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	old State: ACTIVE  new State: IDLE
+
+2016.05.11 14:32:40:793 EDT | Info       | CallP | Call | +15146976603 | South_as55 | callhalf-20:0
+
+	Processing Event: com.broadsoft.events.callhalf.ReleaseEvent {CHCallManager.callhalf-20,CHCall.callhalf-20:0}
+
+2016.05.11 14:32:40:793 EDT | Info       | CallP | Call | +15146976603 | South_as55 | callhalf-20:0
+
+	old State: ACTIVE  new State: RELEASED
+
+2016.05.11 14:32:40:794 EDT | Info       | Sip | +15146976603 | callhalf-20:0
+
+	udp 377 Bytes OUT to 10.9.55.11:5061
+SIP/2.0 200 OK
+Via:SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK6843b2fec20931229cffa273644ec7f676b830f4,SIP/2.0/UDP 10.9.55.37:5060;branch=z9hG4bK220806066
+From:"john3 south"<sip:+15146976603@mtlasdev55.net;user=phone>;tag=521308686
+To:<sip:mtlasdev55.net>;tag=1766290542-1462991553901-
+Call-ID:BW143233901110516-795420054@10.9.55.21
+CSeq:277594808 BYE
+Content-Length:0
+
+
+
+2016.05.11 14:32:40:798 EDT | FieldDebug | Generic
+
+	Removing User: 5146976603@mtlasdev55.net from local map
+
+2016.05.11 14:32:40:800 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	Processing Event: com.broadsoft.events.callhalf.ReleaseEvent {CHCall.callhalf-20:0,CHCall.callhalf-19:0}
+
+2016.05.11 14:32:40:800 EDT | Info       | Accounting
+
+	CALL RELEASE ACCOUNTING EVENT
+	Time Stamp: Wed May 11 14:32:40 EDT 2016 (1462991560791)
+	Accounting ID: 20:0
+	Remote Release: false
+	Release Cause: NORMAL
+	Route: unconfirmed
+	Network Translated Address: null
+	Category: PRIVATE
+	Network CallID: BW143233597110516-1386164150@10.9.55.21
+	Call Inactive: false
+	Charge Indicator: null
+	Access CallID: BW143233901110516-795420054@10.9.55.21
+	P-Charging-Vector: null
+	P-Charging-Function-Addresses: null
+	P-Access-Network-Info: null
+	Related Call Id Name: null
+	Related Call Id Reason: null
+	LocalSDP: present (ANSWER)
+	ConfigurableTreatment: null
+	Called Asserted Identity: sip:+15146976608@mtlasdev55.net
+	Called Asserted Presentation Indicator: PUBLIC
+	SIP error code: null
+	pbxDeflection: false
+	Calling Party Addresses List: [sip:5146976608@mtlasdev55.net, tel:+15146976608]
+	Reason: null
+	Received TimeZone: null
+	User Equipment Info: null
+	Charging Group Id: null
+
+
+2016.05.11 14:32:40:800 EDT | Info       | CallP | Call | +15146976608 | PSTN | callhalf-19:0
+
+	old State: ACTIVE  new State: RELEASED
+
+2016.05.11 14:32:40:800 EDT | Info       | CallP | Call Manager | +15146976608 | PSTN | callhalf-19
+
+	Processing Event: com.broadsoft.events.callhalf.ReleaseEvent {CHCall.callhalf-19:0,CHCallManager.callhalf-19}
+
+2016.05.11 14:32:40:800 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	old State: ACTIVE  new State: IDLE
+
+2016.05.11 14:32:40:800 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	Transforming Event: com.broadsoft.events.iwp.EndpointReleaseEvent {CHCallManager.callhalf-19,SipEndpoint.callhalf-19:0}
+
+2016.05.11 14:32:40:801 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	call: 1  old State: ACTIVE  new State: RELEASING
+
+2016.05.11 14:32:40:801 EDT | Info       | Sip | +15146976608 | callhalf-19:0
+
+	udp 492 Bytes OUT to 10.9.55.11:5061
+BYE sip:10.9.55.21:5060 SIP/2.0
+Via:SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594803-447051573-1462991554161
+From:"john3 south"<sip:+15146976603@mtlasdev55.net;user=phone>;tag=447051573-1462991554161
+To:"john8 south"<sip:+15146976608@mtlasdev55.net;user=phone>;tag=814538767-1462991553597-
+Call-ID:BW143233597110516-1386164150@10.9.55.21
+CSeq:277594803 BYE
+Route:<sip:10.9.55.11:5061;lr>,<sip:10.9.55.11:5061;lr>
+Max-Forwards:10
+Content-Length:0
+
+
+
+2016.05.11 14:32:40:824 EDT | Info       | Sip | +15146976603 | callhalf-18:0
+
+	udp 621 Bytes IN from 10.9.55.11:5061
+BYE sip:10.9.55.21:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bKaac18cd8de89dceefa485fea3f9035e345912cfc
+Via: SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK56fdf4bb2c6e2f2fe6f1231ba6fbd7de99549311
+Via: SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594803-447051573-1462991554161
+From: "john3 south" <sip:+15146976603@mtlasdev55.net;user=phone>;tag=447051573-1462991554161
+To: "john8 south" <sip:+15146976608@mtlasdev55.net;user=phone>;tag=814538767-1462991553597-
+Call-ID: BW143233597110516-1386164150@10.9.55.21
+CSeq: 277594803 BYE
+Max-Forwards: 8
+Content-Length: 0
+
+
+
+2016.05.11 14:32:40:824 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	Processing Event: com.broadsoft.events.sip.SipByeEvent
+
+2016.05.11 14:32:40:824 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	call: 1  old State: ACTIVE  new State: RELEASED
+
+2016.05.11 14:32:40:824 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	Transforming Event: com.broadsoft.events.sip.SipByeEvent
+
+2016.05.11 14:32:40:824 EDT | Info       | CallP | Call Manager | +15146976603 | PSTN | callhalf-18
+
+	Processing Event: com.broadsoft.events.iwp.EndpointReleaseEvent {SipEndpoint.callhalf-18:0,CHCallManager.callhalf-18}
+
+2016.05.11 14:32:40:824 EDT | Info       | Sip | +15146976603 | callhalf-18:0
+
+	udp 567 Bytes OUT to 10.9.55.11:5061
+SIP/2.0 200 OK
+Via:SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bKaac18cd8de89dceefa485fea3f9035e345912cfc,SIP/2.0/UDP 10.9.55.11:5061;branch=z9hG4bK56fdf4bb2c6e2f2fe6f1231ba6fbd7de99549311,SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594803-447051573-1462991554161
+From:"john3 south"<sip:+15146976603@mtlasdev55.net;user=phone>;tag=447051573-1462991554161
+To:"john8 south"<sip:+15146976608@mtlasdev55.net;user=phone>;tag=814538767-1462991553597-
+Call-ID:BW143233597110516-1386164150@10.9.55.21
+CSeq:277594803 BYE
+Content-Length:0
+
+
+
+2016.05.11 14:32:40:824 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	old State: ACTIVE  new State: IDLE
+
+2016.05.11 14:32:40:824 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	Processing Event: com.broadsoft.events.callhalf.ReleaseEvent {CHCallManager.callhalf-18,CHCall.callhalf-18:0}
+
+2016.05.11 14:32:40:825 EDT | Info       | CallP | Call | +15146976603 | PSTN | callhalf-18:0
+
+	old State: ACTIVE  new State: RELEASED
+
+2016.05.11 14:32:40:825 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Event: com.broadsoft.events.callhalf.ReleaseEvent {CHCall.callhalf-18:0,CHCall.callhalf-17:0}
+
+2016.05.11 14:32:40:825 EDT | Info       | CallP | Call | +15146976608 | South_as55 | callhalf-17:0
+
+	old State: ACTIVE  new State: RELEASED
+
+2016.05.11 14:32:40:825 EDT | Info       | CallP | Call Manager | +15146976608 | South_as55 | callhalf-17
+
+	Processing Event: com.broadsoft.events.callhalf.ReleaseEvent {CHCall.callhalf-17:0,CHCallManager.callhalf-17}
+
+2016.05.11 14:32:40:825 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	old State: ACTIVE  new State: IDLE
+
+2016.05.11 14:32:40:825 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	Transforming Event: com.broadsoft.events.iwp.EndpointReleaseEvent {CHCallManager.callhalf-17,SipEndpoint.callhalf-17:0}
+
+2016.05.11 14:32:40:826 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	call: 1  old State: ACTIVE  new State: RELEASING
+
+2016.05.11 14:32:40:826 EDT | Info       | Sip | +15146976608 | callhalf-17:0
+
+	udp 438 Bytes OUT to 10.9.55.11:5061
+BYE sip:5146976608@192.168.22.64 SIP/2.0
+Via:SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594632-2026890481-1462991554199
+From:<sip:603@mtlasdev55.net;user=phone>;tag=2026890481-1462991554199
+To:"Polycom Line 2"<sip:5146976608@mtlasdev55.net>;tag=CF7CBB63-537905B6
+Call-ID:ecd9e08f-6b41222-1d6f505@192.168.22.64
+CSeq:277594632 BYE
+Route:<sip:10.9.55.11:5061;lr>
+Max-Forwards:10
+Content-Length:0
+
+
+
+2016.05.11 14:32:40:826 EDT | FieldDebug | Accounting
+
+	Stopping GrantedUnitsThresholdTimer id=11
+
+2016.05.11 14:32:40:827 EDT | FieldDebug | Accounting
+
+	Sending CCR[Termination] with callId=17:0, ssk=localHost8
+
+2016.05.11 14:32:40:828 EDT | Info       | Accounting
+
+	CALL RELEASE ACCOUNTING EVENT
+	Time Stamp: Wed May 11 14:32:40 EDT 2016 (1462991560823)
+	Accounting ID: 17:0
+	Remote Release: true
+	Release Cause: NORMAL
+	Route: mtlasdev55.net
+	Network Translated Address: null
+	Category: PRIVATE
+	Network CallID: BW143233597110516-1386164150@10.9.55.21
+	Call Inactive: false
+	Charge Indicator: null
+	Access CallID: ecd9e08f-6b41222-1d6f505@192.168.22.64
+	P-Charging-Vector: null
+	P-Charging-Function-Addresses:ecf=rf.server.mtl.broadsoft.com
+	P-Access-Network-Info: null
+	Related Call Id Name: null
+	Related Call Id Reason: null
+	LocalSDP: present (OFFER)
+	ConfigurableTreatment: null
+	Called Asserted Identity: sip:+15146976603@mtlasdev55.net
+	Called Asserted Presentation Indicator: PUBLIC
+	SIP error code: null
+	pbxDeflection: false
+	Calling Party Addresses List: [sip:5146976608@mtlasdev55.net]
+	Reason: null
+	Received TimeZone: null
+	User Equipment Info: null
+	Charging Group Id: null
+
+
+2016.05.11 14:32:40:828 EDT | FieldDebug | Diameter | Base | Node "xs" | Connection "rf.server.mtl.broadsoft.com", id=1 | Transport
+
+	tcp 2472 Bytes OUT to 10.9.55.11:55971
+Message header:
+	flags=RP
+	commandCode=272 (CCR)
+	applicationId=4
+	hopByHopId=671325898
+	endToEndId=1973420049
+AVPs:
+	Session-Id: code=263, flags=M, UTF8String, value=xs.client.mtl.broadsoft.com;1462991553566;0|1
+	Origin-Host: code=264, flags=M, DiameterIdentity, value=xs.client.mtl.broadsoft.com
+	Origin-Realm: code=296, flags=M, DiameterIdentity, value=TestRealm
+	Destination-Realm: code=283, flags=M, DiameterIdentity, value=TestRealm
+	Destination-Host: code=293, flags=M, DiameterIdentity, value=rf.server.mtl.broadsoft.com
+	CC-Request-Type: code=416, flags=M, Enumerated, value=TERMINATION_REQUEST
+	CC-Request-Number: code=415, flags=M, Unsigned32, value=2 Description: Unknown
+	Auth-Application-Id: code=258, flags=M, Unsigned32, value=4 Description: Unknown
+	Origin-State-Id: code=278, flags=M, Unsigned32, value=1462990682 Description: Unknown
+	User-Name: code=1, flags=M, UTF8String, value=5146976608@mtlasdev55.net
+	Event-Timestamp: code=55, flags=M, Time, value=Wed May 11 14:32:40 EDT 2016
+	Service-Context-Id: code=461, flags=M, UTF8String, value=8.32260@3gpp.org
+	Subscription-Id: code=443, flags=M, Grouped, value=
+	  Subscription-Id-Type: code=450, flags=M, Integer32, value=2
+	  Subscription-Id-Data: code=444, flags=M, UTF8String, value=sip:5146976608@mtlasdev55.net
+	Multiple-Services-Credit-Control: code=456, flags=M, Grouped, value=
+	  Used-Service-Unit: code=446, flags=M, Grouped, value=
+	    CC-Time: code=420, flags=M, Unsigned32, value=3 Description: Unknown
+	  Reporting-Reason: code=872, vendorId=10415, flags=VM, Enumerated, value=FINAL
+	Service-Information: code=873, vendorId=10415, flags=VM, Grouped, value=
+	  PS-Information: code=874, vendorId=10415, flags=VM, Grouped, value=
+	    3GPP-MS-TimeZone: code=23, vendorId=10415, flags=VM, OctetString, value=6901 (printable chars): "i\u0001"
+	  IMS-Information: code=876, vendorId=10415, flags=VM, Grouped, value=
+	    Event-Type: code=823, vendorId=10415, flags=VM, Grouped, value=
+	      Sip-Method: code=824, vendorId=10415, flags=VM, UTF8String, value=INVITE
+	    Node-Functionality: code=862, vendorId=10415, flags=VM, Enumerated, value=AS
+	    Role-of-Node: code=829, vendorId=10415, flags=VM, Enumerated, value=ORIGINATING-ROLE
+	    User-Session-Id: code=830, vendorId=10415, flags=VM, UTF8String, value=ecd9e08f-6b41222-1d6f505@192.168.22.64
+	    Outgoing-Session-Id: code=2320, vendorId=10415, flags=VM, UTF8String, value=BW143233597110516-1386164150@10.9.55.21
+	    Calling-Party-Address: code=831, vendorId=10415, flags=VM, UTF8String, value=tel:+15146976608
+	    Called-Party-Address: code=832, vendorId=10415, flags=VM, UTF8String, value=tel:+15146976603
+	    Called-Asserted-Identity: code=1250, vendorId=10415, flags=VM, UTF8String, value=sip:+15146976603@mtlasdev55.net
+	    Requested-Party-Address: code=1251, vendorId=10415, flags=VM, UTF8String, value=sip:603@mtlasdev55.net;user=phone
+	    Time-Stamps: code=833, vendorId=10415, flags=VM, Grouped, value=
+	      SIP-Request-Timestamp: code=834, vendorId=10415, flags=VM, Time, value=Wed May 11 14:32:33 EDT 2016
+	      SIP-Response-Timestamp: code=835, vendorId=10415, flags=VM, Time, value=Wed May 11 14:32:37 EDT 2016
+	      SIP-Request-Timestamp-Fraction: code=2301, vendorId=10415, flags=VM, Unsigned32, value=542 Description: Unknown
+	      SIP-Response-Timestamp-Fraction: code=2302, vendorId=10415, flags=VM, Unsigned32, value=195 Description: Unknown
+	    Inter-Operator-Identifier: code=838, vendorId=10415, flags=VM, Grouped, value=
+	      Originating-IOI: code=839, vendorId=10415, flags=VM, UTF8String, value=mtlasdev55.net
+	    IMS-Charging-Identifier: code=841, vendorId=10415, flags=VM, UTF8String, value=A5CF34A5DBC0367C
+	    SDP-Session-Description: code=842, vendorId=10415, flags=VM, UTF8String, value=v=0
+	    SDP-Session-Description: code=842, vendorId=10415, flags=VM, UTF8String, value=o=BroadWorks 17 1 IN IP4 10.9.55.37
+	    SDP-Session-Description: code=842, vendorId=10415, flags=VM, UTF8String, value=s=-
+	    SDP-Session-Description: code=842, vendorId=10415, flags=VM, UTF8String, value=c=IN IP4 10.9.55.37
+	    SDP-Session-Description: code=842, vendorId=10415, flags=VM, UTF8String, value=a=sendrecv
+	    SDP-Session-Description: code=842, vendorId=10415, flags=VM, UTF8String, value=t=0 0
+	    SDP-Media-Component: code=843, vendorId=10415, flags=VM, Grouped, value=
+	      SDP-Media-Name: code=844, vendorId=10415, flags=VM, UTF8String, value=m=audio 11800 RTP/AVP 0 101
+	      SDP-Media-Description: code=845, vendorId=10415, flags=VM, UTF8String, value=a=rtpmap:0 PCMU/8000
+	      SDP-Media-Description: code=845, vendorId=10415, flags=VM, UTF8String, value=a=fmtp:101 0-15
+	      SDP-Media-Description: code=845, vendorId=10415, flags=VM, UTF8String, value=a=rtpmap:101 telephone-event/8000
+	      Media-Initiator-Flag: code=882, vendorId=10415, flags=VM, Enumerated, value=calling party
+	      SDP-Type: code=2036, vendorId=10415, flags=VM, Enumerated, value=SDP Answer
+	    Access-Network-Information: code=1263, vendorId=10415, flags=VM, UTF8String, value=IEEE-802.11b;isp=abc;network=4011
+	    Cause-Code: code=861, vendorId=10415, flags=VM, Integer32, value=0
+	BWAS-Radius-Encoding-Version: code=0, vendorId=6431, flags=V, UTF8String, value=20.0
+	BWAS-Record-id: code=1, vendorId=6431, flags=V, UTF8String, value=0000000003080027B92F8020160511183233.5421-040000
+	BWAS-Service-provider: code=2, vendorId=6431, flags=V, UTF8String, value=MtlASDev
+	BWAS-Type: code=3, vendorId=6431, flags=V, UTF8String, value=Normal
+	BWAS-User-Number: code=4, vendorId=6431, flags=V, UTF8String, value=+15146976608
+	BWAS-Direction: code=6, vendorId=6431, flags=V, UTF8String, value=Originating
+	BWAS-Calling-Number: code=7, vendorId=6431, flags=V, UTF8String, value=+15146976608
+	BWAS-Calling-Presentation-Indic: code=8, vendorId=6431, flags=V, UTF8String, value=Public
+	BWAS-Called-Number: code=9, vendorId=6431, flags=V, UTF8String, value=+15146976603
+	BWAS-Start-Time: code=10, vendorId=6431, flags=V, UTF8String, value=20160511183233.542
+	BWAS-User-Timezone: code=11, vendorId=6431, flags=V, UTF8String, value=1-040000
+	BWAS-Answer-Indic: code=12, vendorId=6431, flags=V, UTF8String, value=Yes
+	BWAS-Answer-Time: code=13, vendorId=6431, flags=V, UTF8String, value=20160511183237.195
+	BWAS-Release-Time: code=14, vendorId=6431, flags=V, UTF8String, value=20160511183240.823
+	BWAS-Termination-Cause: code=15, vendorId=6431, flags=V, UTF8String, value=016
+	BWAS-Network-Type: code=16, vendorId=6431, flags=V, UTF8String, value=VoIP
+	BWAS-Dialed-Digits: code=18, vendorId=6431, flags=V, UTF8String, value=603
+	BWAS-Call-Category: code=19, vendorId=6431, flags=V, UTF8String, value=private
+	BWAS-Releasing-Party: code=23, vendorId=6431, flags=V, UTF8String, value=remote
+	BWAS-Route: code=24, vendorId=6431, flags=V, UTF8String, value=mtlasdev55.net
+	BWAS-Network-Callid: code=25, vendorId=6431, flags=V, UTF8String, value=BW143233597110516-1386164150@10.9.55.21
+	BWAS-Codec: code=26, vendorId=6431, flags=V, UTF8String, value=PCMU/8000
+	BWAS-Access-Device-Address: code=27, vendorId=6431, flags=V, UTF8String, value=192.168.22.64
+	BWAS-Access-Callid: code=28, vendorId=6431, flags=V, UTF8String, value=ecd9e08f-6b41222-1d6f505@192.168.22.64
+	BWAS-Group: code=32, vendorId=6431, flags=V, UTF8String, value=South_as55
+	BWAS-Charge-Indic: code=42, vendorId=6431, flags=V, UTF8String, value=n
+	BWAS-Local-Callid: code=45, vendorId=6431, flags=V, UTF8String, value=17:0
+	BWAS-Charging-Vector-Key: code=59, vendorId=6431, flags=V, UTF8String, value=A5CF34A5DBC0367C
+	BWAS-Charging-Vector-Orig: code=61, vendorId=6431, flags=V, UTF8String, value=mtlasdev55.net
+	BWAS-UserId: code=121, vendorId=6431, flags=V, UTF8String, value=south08@mtlasdev55.net
+	BWAS-Other-Party-Name: code=122, vendorId=6431, flags=V, UTF8String, value=john3 south
+	BWAS-Other-Party-Name-Pres-Indic: code=123, vendorId=6431, flags=V, UTF8String, value=Public
+	BWAS-Access-Network-Info: code=144, vendorId=6431, flags=V, UTF8String, value=IEEE-802.11b;isp=abc;network=4011
+	BWAS-Charging-Function-Addresses: code=145, vendorId=6431, flags=V, UTF8String, value=ecf=rf.server.mtl.broadsoft.com
+	BWAS-Codec-Usage: code=157, vendorId=6431, flags=V, UTF8String, value=3.614
+	BWAS-AS-Call-Type: code=231, vendorId=6431, flags=V, UTF8String, value=Group
+	BWAS-Prepaid-Status: code=246, vendorId=6431, flags=V, UTF8String, value=charged
+	BWAS-Location: code=312, vendorId=6431, flags=V, UTF8String, value=5146976608@mtlasdev55.net
+	BWAS-Location-Type: code=313, vendorId=6431, flags=V, UTF8String, value=Primary Device
+	BWAS-Location-Usage: code=314, vendorId=6431, flags=V, UTF8String, value=3.627
+	BWAS-Location-Network: code=428, vendorId=6431, flags=V, UTF8String, value=Fixed
+	BWAS-Access-Network-Info-From-Register: code=430, vendorId=6431, flags=V, UTF8String, value=IEEE-802.11b;isp=abc;network=4011
+
+
+2016.05.11 14:32:40:834 EDT | FieldDebug | Diameter | Base | Node "xs" | Connection "rf.server.mtl.broadsoft.com", id=1 | Transport
+
+	tcp 288 Bytes IN from 10.9.55.11:55971
+Message header:
+	flags=P
+	commandCode=272 (CCA)
+	applicationId=4
+	hopByHopId=671325898
+	endToEndId=1973420049
+AVPs:
+	Session-Id: code=263, flags=M, UTF8String, value=xs.client.mtl.broadsoft.com;1462991553566;0|1
+	Origin-Host: code=264, flags=M, DiameterIdentity, value=rf.server.mtl.broadsoft.com
+	Origin-Realm: code=296, flags=M, DiameterIdentity, value=TestRealm
+	Auth-Application-Id: code=258, flags=M, Unsigned32, value=4 Description: Unknown
+	CC-Request-Type: code=416, flags=M, Enumerated, value=TERMINATION_REQUEST
+	CC-Request-Number: code=415, flags=M, Unsigned32, value=2 Description: Unknown
+	Result-Code: code=268, flags=M, Unsigned32, value=2001 Description: Diameter Success
+	Validity-Time: code=448, flags=M, Unsigned32, value=1000 Description: Unknown
+	Credit-Control-Failure-Handling: code=427, flags=M, Enumerated, value=CONTINUE
+	CC-Session-Failover: code=418, flags=M, Enumerated, value=FAILOVER_NOT_SUPPORTED
+	Multiple-Services-Credit-Control: code=456, flags=M, Grouped, value=
+	  Granted-Service-Unit: code=431, flags=M, Grouped, value=
+	    CC-Time: code=420, flags=M, Unsigned32, value=30 Description: Unknown
+	  Time-Quota-Threshold: code=868, vendorId=10415, flags=VM, Unsigned32, value=15 Description: Unknown
+	  Trigger: code=1264, vendorId=10415, flags=VM, Grouped, value=
+	    Trigger-Type: code=870, vendorId=10415, flags=VM, Enumerated, value=CHANGE_IN_MEDIA_COMPOSITION
+
+
+2016.05.11 14:32:40:834 EDT | FieldDebug | Accounting
+
+	com.broadsoft.events.accounting.AccountingCcaReceivedEvent
+
+2016.05.11 14:32:40:834 EDT | FieldDebug | Accounting
+
+	CCA[Termination], callId=17:0, ssk=localHost8
+
+2016.05.11 14:32:40:834 EDT | FieldDebug | Accounting
+
+	Unmapping RoActiveSession for south08@mtlasdev55.net, callId=17:0, ssk=localHost8
+
+2016.05.11 14:32:41:021 EDT | Info       | Sip | +15146976608 | callhalf-19:0
+
+	udp 409 Bytes IN from 10.9.55.11:5061
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594803-447051573-1462991554161
+From: "john3 south" <sip:+15146976603@mtlasdev55.net;user=phone>;tag=447051573-1462991554161
+To: "john8 south" <sip:+15146976608@mtlasdev55.net;user=phone>;tag=814538767-1462991553597-
+Call-ID: BW143233597110516-1386164150@10.9.55.21
+CSeq: 277594803 BYE
+Content-Length: 0
+
+
+
+2016.05.11 14:32:41:021 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	Processing Event: com.broadsoft.events.sip.Sip200SuccessEvent
+
+2016.05.11 14:32:41:021 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	call: 1  old State: RELEASING  new State: RELEASED
+
+2016.05.11 14:32:41:023 EDT | Info       | Sip | +15146976608 | callhalf-17:0
+
+	udp 488 Bytes IN from 10.9.55.11:5061
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.9.55.21;branch=z9hG4bKBroadWorks.191ujc9-10.9.55.11V5061-0-277594632-2026890481-1462991554199
+From: <sip:603@mtlasdev55.net;user=phone>;tag=2026890481-1462991554199
+To: "Polycom Line 2" <sip:5146976608@mtlasdev55.net>;tag=CF7CBB63-537905B6
+CSeq: 277594632 BYE
+Call-ID: ecd9e08f-6b41222-1d6f505@192.168.22.64
+Contact: <sip:5146976608@192.168.22.64>
+User-Agent: PolycomSoundPointIP-SPIP_550-UA/4.0.3.7562
+Accept-Language: en
+Content-Length: 0
+
+
+
+2016.05.11 14:32:41:023 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Event: com.broadsoft.events.sip.Sip200SuccessEvent
+
+2016.05.11 14:32:41:023 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	call: 1  old State: RELEASING  new State: RELEASED
+
+2016.05.11 14:32:41:026 EDT | FieldDebug | Generic
+
+	Removing User: 5146976608@mtlasdev55.net from local map
+
+2016.05.11 14:32:45:793 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	Processing Event: com.broadsoft.events.timer.TimerTimeOutEvent
+
+2016.05.11 14:32:45:793 EDT | Info       | CallP | SIP Endpoint | +15146976603 | South_as55 | callhalf-20:0
+
+	call: 1  old State: RELEASED  new State: DEAD
+
+2016.05.11 14:32:45:793 EDT | Info       | CallP | Call Manager | +15146976603 | South_as55 | callhalf-20
+
+	Processing Event: com.broadsoft.events.iwp.EndpointCompletedEvent {SipEndpoint.callhalf-20:0,CHCallManager.callhalf-20}
+
+2016.05.11 14:32:45:793 EDT | Info       | CallP | CallP | +15146976603 | South_as55 | callhalf-20
+
+	Session Completed
+
+2016.05.11 14:32:45:824 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	Processing Event: com.broadsoft.events.timer.TimerTimeOutEvent
+
+2016.05.11 14:32:45:825 EDT | Info       | CallP | SIP Endpoint | +15146976603 | PSTN | callhalf-18:0
+
+	call: 1  old State: RELEASED  new State: DEAD
+
+2016.05.11 14:32:45:825 EDT | Info       | CallP | Call Manager | +15146976603 | PSTN | callhalf-18
+
+	Processing Event: com.broadsoft.events.iwp.EndpointCompletedEvent {SipEndpoint.callhalf-18:0,CHCallManager.callhalf-18}
+
+2016.05.11 14:32:45:825 EDT | Info       | CallP | CallP | +15146976603 | PSTN | callhalf-18
+
+	Session Completed
+
+2016.05.11 14:32:46:022 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	Processing Event: com.broadsoft.events.timer.TimerTimeOutEvent
+
+2016.05.11 14:32:46:022 EDT | Info       | CallP | SIP Endpoint | +15146976608 | PSTN | callhalf-19:0
+
+	call: 1  old State: RELEASED  new State: DEAD
+
+2016.05.11 14:32:46:022 EDT | Info       | CallP | Call Manager | +15146976608 | PSTN | callhalf-19
+
+	Processing Event: com.broadsoft.events.iwp.EndpointCompletedEvent {SipEndpoint.callhalf-19:0,CHCallManager.callhalf-19}
+
+2016.05.11 14:32:46:023 EDT | Info       | CallP | CallP | +15146976608 | PSTN | callhalf-19
+
+	Session Completed
+
+2016.05.11 14:32:46:024 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	Processing Event: com.broadsoft.events.timer.TimerTimeOutEvent
+
+2016.05.11 14:32:46:024 EDT | Info       | CallP | SIP Endpoint | +15146976608 | South_as55 | callhalf-17:0
+
+	call: 1  old State: RELEASED  new State: DEAD
+
+2016.05.11 14:32:46:024 EDT | Info       | CallP | Call Manager | +15146976608 | South_as55 | callhalf-17
+
+	Processing Event: com.broadsoft.events.iwp.EndpointCompletedEvent {SipEndpoint.callhalf-17:0,CHCallManager.callhalf-17}
+
+2016.05.11 14:32:46:024 EDT | Info       | CallP | CallP | +15146976608 | South_as55 | callhalf-17
+
+	Session Completed
+
