@@ -27,23 +27,24 @@ public class XsSipChToPlant {
             + XS_SESSION_ID );
 
     private final static Pattern DIRECTION_LINE =
-            Pattern.compile("\\s*udp \\d+ Bytes (IN from|OUT to) (.+):\\d{1,5}");
+            Pattern.compile("\\s*(?:udp|tcp) \\d+ Bytes (IN from|OUT to) (.+:\\d{1,5})");
     private final static Pattern SIP_RESPONSE_LINE =
             Pattern.compile("SIP/2.0 (\\d{3}).*?");
     private static final String METHOD =
             "(INVITE|ACK|BYE|CANCEL|OPTIONS|REGISTER|PRACK|SUBSCRIBE|NOTIFY|PUBLISH|INFO|REFER|MESSAGE|UPDATE)";
     private final static Pattern SIP_REQUEST_LINE =
             Pattern.compile(METHOD + " (:?sip|tel):.*?");
+    private final static Pattern DIAMETER_MESSAGE_LINE = Pattern.compile("\\s*commandCode=\\d+\\s+\\(([A-Z]+)\\)");
 
 
 
     public static String createMessage(String message, String origin, String destination, int lineNumber) {
-        return origin + " -> " + destination + " : " + "[[" + lineNumber + "{" + origin + "," + destination + "}" + "]] " + message + "\n";
+        return origin + " -> " + destination + " : " + "[[" + lineNumber + "]] " + message + "\n";
     }
 
 
     public static void main(String[] args) throws IOException {
-        Direction direction;
+        Direction direction = Direction.OUT;
         String destination = null;
         String origin = null;
         String sipEndPoint = null;
@@ -57,6 +58,8 @@ public class XsSipChToPlant {
             ++lineNumber;
 
             // headline
+            // use XS as the sipEndpoint as default in cases for DIAMETER messages
+
             matcher = HEAD_LINE.matcher(line);
             if ( matcher.matches() ) {
                 sipEndPoint = "\"" +  "CH-" + matcher.group(1) + "\"";
@@ -92,6 +95,20 @@ public class XsSipChToPlant {
             // sip response line
             matcher = SIP_RESPONSE_LINE.matcher(line);
             if ( matcher.matches() ) {
+                messages.add(createMessage(matcher.group(1), origin, destination, lineNumber));
+                continue;
+            }
+
+            matcher = DIAMETER_MESSAGE_LINE.matcher(line);
+            if ( matcher.matches() ) {
+                switch(direction) {
+                    case IN:
+                        destination = "XS";
+                        break;
+                    case OUT:
+                        origin = "XS";
+                        break;
+                }
                 messages.add(createMessage(matcher.group(1), origin, destination, lineNumber));
                 continue;
             }
